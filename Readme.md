@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Anna Serova](https://up.htmlacademy.ru/htmlcss/30/user/444611).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
