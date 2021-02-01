@@ -148,6 +148,9 @@ a {
   /* border-radius: 26px; */
   /* padding: 9px 13px 11px 13px; */
 }
+.open-nav-link span {
+  border:none;
+}
 /* user navigation  */
 .user-nav {
   display: flex;
