@@ -17,13 +17,14 @@
   <div class="content-wrapper">
     <header class="main-header">
       <nav class="site-nav">
-        <a href="#">
+        <a class="logo" href="#">
           <img src="img/src/svg/header-logo.svg" alt="логотип магазина GllaycyShop" width="154" height="64">
         </a>
+
         <ul>
-          <li class="site-nav-link"><a href="catalog.html">Каталог</a></li>
-          <li class="site-nav-link"><a href="#">Доставка и оплата</a></li>
-          <li class="site-nav-link"><a href="#">О компании</a></li>
+          <li><a href="catalog.html" class="site-nav-link"><span>Каталог</span></a></li>
+          <li><a href="#" class="site-nav-link"><span>Доставка и оплата</span></a></li>
+          <li><a href="#" class="site-nav-link"><span>О компании</span></a></li>
         </ul>
       </nav>
 
@@ -331,46 +332,47 @@
       <label for="search">Поиск</label>
     </div>
 
-    <div>
+    <div class="feedback modal">
       <h2>Форма обратной связи</h2>
       <span>Мы обязательно вам ответим!</span>
 
       <form>
-        <input type="text" placeholder="Имя Фамилия" name="user-name" id="user-name">
+        <input type="text" placeholder="Имя Фамилия" name="user-name" id="user-name" class="input">
         <label for="user-name"></label>
 
-        <input type="email" placeholder="email@example.com" id="feadback-email" name="email">
+        <input type="email" placeholder="email@example.com" id="feadback-email" name="email" class="input">
         <label for="feadback-email"></label>
 
-        <!-- задать размеры текс окошку  -->
-        <textarea></textarea>
+        <textarea class="textarea" name="user-text" rows="8" cols="51"></textarea>
         <button type="submit" class="btn">Отправить</button>
       </form>
-
     </div>
 
-    <div>
+    <!-- <div class="modal cart">
       <h2>Товары в корзине</h2>
-      <table>
-        <tr>
-          <td>Удалить</td>
-          <td></td>
-          <td>Пломбир с апельсиновым джемом</td>
-          <td>1,5 кг х 200 руб.</td>
-          <td>300 руб.</td>
-        </tr>
-        <tr>
-          <td>Удалить</td>
-          <td></td>
-          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-          <td>1,5 кг х 300 руб.</td>
-          <td>450 руб.</td>
-        </tr>
-      </table>
-      <span>Итого:</span><span>750 руб.</span>
-      <button type="button">Оформить заказ</button>
-    </div>
-  </div>
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <table>
+          <tr>
+            <td>Удалить</td>
+            <td></td>
+            <td>Пломбир с апельсиновым джемом</td>
+            <td>1,5 кг х 200 руб.</td>
+            <td>300 руб.</td>
+          </tr>
+          <tr>
+            <td>Удалить</td>
+            <td></td>
+            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td>1,5 кг х 300 руб.</td>
+            <td>450 руб.</td>
+          </tr>
+        </table>
+        <span>Итого:</span><span>750 руб.</span>
+        <button type="submit" class="btn">Оформить заказ</button>
+      </form>
+    </div> -->
+
 
   <script src="js/script.js"></script>
 </body>

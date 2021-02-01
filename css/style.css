@@ -98,14 +98,22 @@ a {
   justify-content: space-between;
 
   position: relative;
+  padding:9px;
 }
 /* site navigation  */
+.logo {
+  margin-right:9px;
+}
 .site-nav {
   display: flex;
   flex-wrap: no-wrap;
 }
 .site-nav ul {
   display: flex;
+
+  margin:0;
+  margin-top:17px;
+  padding:0;
 }
 
 .site-nav-link {
@@ -116,13 +124,13 @@ a {
   padding: 9px 13px 11px 13px;
   border-radius: 26px;
 }
-.site-nav-link a {
+.site-nav-link span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .site-nav-link:hover {
   background-color: var(--default-light-bg);
 }
-.site-nav-link:hover a {
+.site-nav-link:hover {
   color: var(--default-dark-text);
   text-decoration: none;
   border: none;
@@ -132,17 +140,23 @@ a {
   background: #ededed;
   box-shadow: inset 0px 2px 1px #696969;
   border-radius: 26px;
-  padding: 9px 13px 11px 13px;
+  /* padding: 9px 13px 11px 13px; */
   color: var(--default-dark-text);
 }
 .open-nav-link {
   background: #d07058;
-  border-radius: 26px;
-  padding: 9px 13px 11px 13px;
+  /* border-radius: 26px; */
+  /* padding: 9px 13px 11px 13px; */
 }
 /* user navigation  */
 .user-nav {
   display: flex;
+  margin-top:7px;
+}
+.user-nav ul {
+  margin:0;
+  padding:0;
+ 
 }
 .user-nav h2 {
   display: none;
@@ -427,6 +441,8 @@ a {
 
 /* map */
 .address {
+  margin-top: 44px;
+
   background-color: #f8f7f4;
 
   font-weight: 400;
@@ -506,10 +522,12 @@ a {
   line-height: 18px;
   font-weight: 400;
 }
-
-.info li {
+.info a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.info li {
   margin-top: 8px;
+  margin-right: 22px;
 }
 .info li:first-child {
   font-size: 13px;
@@ -614,6 +632,9 @@ a {
 /* modals windows  */
 
 .modal {
+  /* Для красоты, временно  */
+  margin: 20px;
+
   background-color: var(--default-light-text);
 }
 .modal h2 {
@@ -622,8 +643,9 @@ a {
 
 /* catalog menu  */
 
-/* при наведении скругляются края, паддингикривые  */
 .catalog-selector {
+  overflow: hidden;
+
   width: 143px;
 
   border-radius: 4px;
@@ -732,23 +754,23 @@ a {
 }
 /* добавить инпут с введенными данными  */
 .input:hover {
-  border:2px solid rgba(178, 178, 178, 0.52);
+  border: 2px solid rgba(178, 178, 178, 0.52);
 }
 .input:active {
-  border:2px solid rgba(46, 136, 228, 0.52);
+  border: 2px solid rgba(46, 136, 228, 0.52);
 }
-.login-form input {
+.login-form .input {
   width: 241px;
   height: 44px;
 
   margin-bottom: 20px;
 }
-.filter input {
+.filter .input {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
 }
-.mailing-form input {
+.mailing-form .input {
   width: 368px;
   height: 44px;
 
@@ -758,4 +780,71 @@ a {
 
   border: 1px solid #d3d3d2;
 }
+.search .input {
+  width: 311px;
+  height: 44px;
+}
 
+/* .search  */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 20px;
+  border-radius: 4px;
+
+  width: 341px;
+  height: 84px;
+}
+.search label {
+  display: none;
+}
+/* feedback  */
+.feedback {
+  display: flex;
+  flex-direction: column;
+
+  height: 441px;
+  width: 477px;
+
+  border-radius: 4px;
+
+  padding: 20px 25px 27px 24px;
+}
+.feedback label {
+  display: none;
+}
+.feedback .input {
+  margin-top: 20px;
+
+  width: 267px;
+  height: 44px;
+}
+.feedback span {
+  color: var(--default-dark-text);
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.feedback .textarea {
+  border-radius: 4px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  outline-style: none;
+  margin-top: 20px;
+}
+.feedback .btn {
+  display: block;
+
+  margin-top: 25px;
+  margin-left: auto;
+}
+/* cart  */
+.cart {
+  color: var(--default-dark-text);
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
