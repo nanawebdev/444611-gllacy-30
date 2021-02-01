@@ -135,7 +135,6 @@ a {
   text-decoration: none;
   border: none;
 }
-
 .site-nav-link:active {
   background: #ededed;
   box-shadow: inset 0px 2px 1px #696969;
@@ -147,6 +146,9 @@ a {
   background: #d07058;
   /* border-radius: 26px; */
   /* padding: 9px 13px 11px 13px; */
+}
+.open-nav-link span {
+  border:none;
 }
 /* user navigation  */
 .user-nav {
