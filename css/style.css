@@ -281,6 +281,14 @@ button {
   font-size: 22px;
   line-height: 24px;
 }
+/* slider  */
+.slider-item {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+
+  color:var(--default-light-text);
+}
 /* stock */
 .stock {
   display: flex;
@@ -654,7 +662,7 @@ button {
   line-height: 16px;
   color: var(--default-light-text);
 
-  height:36px;
+  height: 36px;
 }
 .filter-wrapper {
   border-style: none;
@@ -693,7 +701,7 @@ button {
   background-color: var(--default-light-bg);
 }
 .filters-sumbit:active {
-  border:none;
+  border: none;
   color: var(--default-dark-text);
   background-color: var(--default-light-bg);
   box-shadow: inset 0px 2px 1px var(--site-nav-link-active);
