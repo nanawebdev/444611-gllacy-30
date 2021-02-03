@@ -86,6 +86,7 @@ img {
 }
 a {
   text-decoration: none;
+  color: var(--default-light-text);
 }
 .section-title {
   display: none;
@@ -98,9 +99,6 @@ a {
   color: var(--default-light-text);
 
   background-color: var(--main-bg-first);
-}
-a {
-  color: var(--default-light-text);
 }
 button {
   border: none;
@@ -271,13 +269,13 @@ button {
 
   font-weight: 700;
 }
-.calls-info span {
+.calls-time {
   font-size: 14px;
   line-height: 16px;
 
   margin-bottom: 8px;
 }
-.calls-info a {
+.calls-number {
   font-size: 22px;
   line-height: 24px;
 }
@@ -321,11 +319,11 @@ button {
 
   padding: 15px 22px 16px;
 }
-.stock-item span {
+.stock-item .banner-title {
   font-size: 35px;
   line-height: 41px;
 }
-.stock-item p {
+.stock-item .banner-text {
   font-size: 18px;
   line-height: 22px;
 }
@@ -426,14 +424,14 @@ button {
 .advantages-column + .advantages-column {
   margin-left: 27px;
 }
-.advantages-item p {
+.advantages-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 
   padding-top: 10px;
 }
-.advantages-item img {
+.advantages-icon {
   margin-right: 6px;
 }
 /* advertising реклама блога*/
@@ -448,14 +446,14 @@ button {
   color: var(--default-dark-text);
   height: 220px;
 }
-.advertising a {
+.advertaising-link {
   color: var(--default-dark-text);
   border-bottom: 2px solid var(--default-dark-text);
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
 }
-.advertising span {
+.advertising-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -467,7 +465,7 @@ button {
   height: 220px;
   background-image: url("./../img/src/backgrounds/mailing-background.png");
 }
-.mailing p {
+.mailing-text {
   color: var(--dark-text);
   font-size: 16px;
   line-height: 22px;
@@ -485,7 +483,7 @@ button {
   width: 548px;
   height: 210px;
 }
-.mailing-form label {
+.mailing-form .label {
   display: none;
 }
 /* map */
@@ -509,12 +507,12 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
-.address p {
+.address-text {
   margin: 0;
   padding: 0;
 }
-.address span,
-.address a {
+.address-data,
+.address .calls-number {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -536,7 +534,7 @@ button {
 
   list-style: none;
 }
-.social-list a {
+.social-link {
   visibility: hidden;
 }
 .social-item {
@@ -572,14 +570,14 @@ button {
 
   list-style: none;
 }
-.info a {
+.info-link {
   border-bottom: 1px solid var(--translucent-light);
 }
-.info li {
+.info-item {
   margin-top: 8px;
   margin-right: 22px;
 }
-.info li:first-child {
+.info-item:first-child {
   font-size: 13px;
   line-height: 18px;
   font-weight: 700;
@@ -590,13 +588,10 @@ button {
   font-size: 12px;
   line-height: 18px;
 }
-.copyright p {
+.copyright-text {
   margin: 0;
 }
 /* CATALOG !  */
-.ice-cream-page h3 {
-  display: none;
-}
 .ice-cream-page .section-title {
   font-weight: 700;
   font-size: 35px;
@@ -735,7 +730,7 @@ button {
   height: 1px;
   background-color: var(--catalog-bg);
 }
-.catalog-list a {
+.catalog-link {
   color: var(--default-dark-text);
   font-weight: 400;
   font-size: 14px;
@@ -757,7 +752,7 @@ button {
 .catalog-item:active {
   background-color: var(--catalog-item-active);
 }
-.new-item a {
+.new-item .catalog-link {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -800,7 +795,7 @@ button {
   color: var(--default-dark-text);
   background-color: var(--modal-light-bg);
 }
-.btn-link span {
+.btn-link .link-text {
   border-bottom: 1px solid var(--underline-modal-link);
 }
 .links-wrapper {
