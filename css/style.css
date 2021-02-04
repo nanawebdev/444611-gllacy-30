@@ -400,19 +400,20 @@ button {
   margin-left: 26px;
   margin-bottom: 40px;
 } */
-.hit-list {
+.hit-list,
+.catalog-items {
   /* display: flex; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 13px;
   outline: 4px solid yellow;
+
 }
 .product-preview {
   justify-self: center;
 }
 .product-thumb {
   border-radius: 50%;
-  
 }
 .product-thumb-wrapper {
   background-color:var(--site-nav-link-active);
@@ -633,9 +634,10 @@ button {
 
   padding-top: 18px;
 }
-.social-list {
-  /* display: flex; */
-}
+/* .social-list {
+  /* display: flex;
+ } */
+
 .social-link {
   visibility: hidden;
 }
@@ -708,6 +710,9 @@ button {
 
   display: flex;
   margin-top: 27px;
+
+  /* display:grid; */
+  /* grid-template-columns: min-conntent min-content min-content; */
 }
 .breadcrumbs-item {
   border-bottom: 1px solid var(--translucent-light);
@@ -725,9 +730,8 @@ button {
 
   background-image: url(./../img/src/svg/pointer-icon.svg);
 }
-.catalog-items {
-  display: flex;
-  flex-wrap: wrap;
+.filters-result {
+  margin-bottom: 40px;
 }
 /* .product-preview:nth-child(4n + 1) {
   margin: 0;
@@ -735,7 +739,13 @@ button {
 } */
 /* filters  */
 .filters {
-  display: flex;
+  /* display: flex; */
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  outline: 4px solid purple;
+  margin-bottom:40px;
 }
 .filter {
   background-color: var(--translucent-light);
@@ -749,6 +759,22 @@ button {
   color: var(--default-light-text);
 
   height: 36px;
+}
+.sorting-filter-wrapper {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.price-filter-wrapper {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.fat-filter-wrapper {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+}
+.flavor-filter-wrapper {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
 }
 .filter-wrapper {
   border-style: none;
@@ -765,9 +791,6 @@ button {
 .sorting-list:hover {
   color: var(--default-dark-text);
 }
-.filters-wrapper {
-  display: flex;
-}
 .filters-sumbit {
   background: var(--translucent-light);
   border: 2px solid var(--default-light-bg);
@@ -775,12 +798,16 @@ button {
 
   color: var(--default-light-text);
   padding: 0 29px;
-  /* width: 144px; */
   height: 36px;
+  margin-top:24px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  justify-self: center;
 }
 .filters-sumbit:hover {
   color: var(--default-dark-text);
