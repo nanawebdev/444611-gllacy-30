@@ -182,6 +182,8 @@ button {
 .main-header-logo {
   display: block;
   margin-right: 9px;
+  width:154px;
+  height:64px;
 }
 .main-navigation {
   /* display: flex; */
@@ -691,7 +693,7 @@ button {
   margin: 0;
 }
 /* CATALOG !  */
-.ice-cream-page .section-title {
+.inner-content .section-title {
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
