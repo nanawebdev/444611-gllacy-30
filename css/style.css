@@ -662,7 +662,7 @@ button {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: var(--default-light-text)
+  color: var(--default-light-text);
   height: 36px;
 }
 .sorting-filter-wrapper {
