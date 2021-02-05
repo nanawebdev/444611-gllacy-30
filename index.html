@@ -15,7 +15,7 @@
 
 <body class="page-body main-page">
 
-  <header class="main-header">
+  <header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo" href="#">
         <img src="img/src/svg/header-logo.svg" alt="логотип магазина GllaycyShop" width="154" height="64">
@@ -33,7 +33,7 @@
               d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z" />
           </svg>
           <span class="user-nav-name">Поиск</span>
-        </button>
+        </button> 
         <button class="login-button user-nav-button">
           <svg class="login-icon nav-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" />
@@ -56,17 +56,16 @@
           <span class="user-nav-name">Пусто</span>
         </button>
       </div>
-      <!-- <div class="calls-info">
-        <h2 class="section-title">Время приема звонков</h2>
-        <span class="calls-time">с 10 до 20, ежедневно</span>
-        <a class="calls-number" href="tel:88124502525">8 812 450-25-25</a>
-      </div> -->
     </nav>
+    <div class="calls-info">
+      <h2 class="section-title">Время приема звонков</h2>
+      <span class="calls-time">с 10 до 20, ежедневно</span>
+      <a class="calls-number" href="tel:88124502525">8 812 450-25-25</a>
+    </div>
   </header>
-
   <main class="main-content">
 
-    <section class="promo-slider">
+    <section class="promo-slider container">
       <h2 class="section-title">Промо товары</h2>
 
       <div class="slider-item">
@@ -100,7 +99,7 @@
 
     </section>
 
-    <section class="stock banners">
+    <section class="stock banners container">
       <h2 class="section-title">Акции</h2>
 
       <div class="banner stock-item stock-item-left">
@@ -119,7 +118,7 @@
       </div>
     </section>
 
-    <section class="hits">
+    <section class="hits container">
       <div class="hits-wrapper">
         <h2 class="section-title">Хиты продаж</h2>
         <ul class="hit-list">
@@ -187,7 +186,7 @@
       </div>
     </section>
 
-    <section class="advantages-wrapper">
+    <section class="advantages-wrapper container">
       <div class="advantages">
         <h2 class="section-title">Преимущества</h2>
         <p class="advantages-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
@@ -238,7 +237,7 @@
 
     </section>
 
-    <section class="banners-wrapper">
+    <section class="banners-wrapper container">
       <h2 class="section-title">Баннеры</h2>
       <article class="advertising banner">
         <h2 class="section-title">Реклама блога</h2>
@@ -261,31 +260,26 @@
       </div>
     </section>
 
-    <section class="map">
-      <div class="pin-wrapper">
+  
+    <!-- <section class="map">
+      <div class="container address-wrapper">
         <img class="map-pin" src="img/src/svg/map-pin.svg" alt="" width="80" height="140">
+        <div class="address">
+          <h2 class="section-title">Где нас найти</h2>
+          <p class="address-text">Адрес главного офиса<br>и офлайн-магазина:<br>
+            <span class="address-data">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span><br>
+          </p>
+          <p class="address-text">Для заказов по телефону:<br>
+            <a class="calls-number" href="tel:88124502525">8 812 450-25-25</a><br>
+            (с 10 до 20 ежедневно)
+          </p>
+          <button class="btn">Форма обратной связи</button>
+        </div>
       </div>
-
-      <div class="address">
-        <h2 class="section-title">Где нас найти</h2>
-
-        <p class="address-text">Адрес главного офиса<br>и офлайн-магазина:<br>
-          <span class="address-data">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span><br>
-        </p>
-
-        <p class="address-text">Для заказов по телефону:<br>
-          <a class="calls-number" href="tel:88124502525">8 812 450-25-25</a><br>
-          (с 10 до 20 ежедневно)
-        </p>
-
-        <button class="btn">Форма обратной связи</button>
-      </div>
-
-    </section>
-
+    </section> -->
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <section class="socials">
 
       <h2 class="section-title">Социальные сети</h2>
@@ -325,6 +319,8 @@
     </section>
 
   </footer>
+
+
 
   <!-- модальные окна  -->
   <!-- <div class="modal catalog-selector">
