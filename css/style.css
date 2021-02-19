@@ -544,7 +544,7 @@ a {
   opacity: 0;
 }
 
-.product-button {
+.fast-view-btn {
   display: none;
   position: absolute;
   bottom: -64px;
@@ -561,7 +561,7 @@ a {
   opacity: 1;
 }
 
-.product-preview:hover .product-button {
+.product-preview:hover .fast-view-btn{
   display: block;
 }
 
@@ -758,7 +758,6 @@ a {
 }
 
 /* map */
-
 
 .map {
   width: 100%;
