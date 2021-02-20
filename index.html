@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
-<!-- добавить Visually-hidden для заголовков с классом section-title -->
+<!-- добавить visually-hidden для заголовков с классом section-title -->
 
 <body class="page-body main-page">
 
@@ -24,10 +24,33 @@
         </a>
 
         <ul class="site-navigation">
-          <li>
+          <li class="catalog-nav-link">
             <a href="catalog.html" class="site-nav-link">
               <span class="nav-link-name">Каталог</span>
             </a>
+            <div class="catalog-modal-wrapper">
+              <div class="modal catalog-modal">
+                <h2 class="visually-hidden">Разделы каталога</h2>
+
+                <ul class="catalog-list">
+                  <li class="new-item">
+                    <a class="catalog-link" href="#">Новинки</a>
+                  </li>
+                  <li class="catalog-item choosen-page">
+                    <a class="catalog-link" href="catalog.html">Сливочное</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li>
             <a href="#" class="site-nav-link">
@@ -41,22 +64,68 @@
           </li>
         </ul>
 
+
         <div class="user-navigation">
-          <h2 class="section-title">Пользовательская навигация</h2>
-          <button class="search-button user-nav-button">
-            <svg class="search-icon nav-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z" />
-            </svg>
-            <span class="user-nav-name">Поиск</span>
-          </button>
-          <button class="login-button user-nav-button">
-            <svg class="login-icon nav-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" />
-              <path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" />
-            </svg>
-            <span class="user-nav-name">Вход</span>
-          </button>
+          <h2 class="visually-hidden">Пользовательская навигация</h2>
+
+          <div class="search-nav-btn">
+            <button class="search-button user-nav-button">
+
+              <svg class="search-icon nav-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z" />
+              </svg>
+              <span class="user-nav-name">Поиск</span>
+            </button>
+            <div class="search-modal-wrapper">
+              <div class="modal search">
+                <h2 class="visually-hidden">Поиск по товарам</h2>
+                <input type="text" placeholder="Крем-брюле" id="search" name="search" class="input">
+                <label for="search" class="label">Поиск</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="login-nav-btn">
+            <button class="login-button user-nav-button">
+              <svg class="login-icon nav-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" />
+                <path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" />
+              </svg>
+              <span class="user-nav-name">Вход</span>
+            </button>
+            <div class="login-modal-wrapper">
+              <div class="modal login">
+                <h2 class="visually-hidden">Логин</h2>
+                <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
+                  <input type="email" placeholder="email@example.com" id="login-email" name="login" class="input">
+                  <label for="login-email">Логин</label>
+
+                  <input type="password" placeholder="••••••" id="login-password" name="password" class="input">
+                  <label for="login-password">Пароль</label>
+
+                  <div class="buttons-wrapper">
+                    <button type="submit" class="btn">Войти</button>
+                    <div class="links-wrapper">
+                      <button class="btn-link dark-link">
+                        <span class="link-text">Забыли пароль?</span>
+                      </button>
+                      <button class="btn-link dark-link">
+                        <span class="link-text">Новая регистрация</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-nav-btn">
+
+            <!-- вложи корзину  -->
+          </div>
           <button class="cart-button user-nav-button">
             <svg class="basket-icon nav-icon" width="21" height="20" fill="#fff" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -74,16 +143,16 @@
         </div>
       </nav>
       <div class="calls-info">
-        <h2 class="section-title">Время приема звонков</h2>
+        <h2 class="visually-hidden">Время приема звонков</h2>
         <span class="calls-time">с 10 до 20, ежедневно</span>
         <a class="calls-number" href="tel:88124502525">8 812 450-25-25</a>
       </div>
     </header>
 
     <main class="main-content">
-      <h1 class="section-title">Магазин мороженого Глейси</h1>
+      <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <section class="promo-slider container">
-        <h2 class="section-title">Промо товары</h2>
+        <h2 class="visually-hidden">Промо товары</h2>
         <ul class="slider-list">
           <li class="slider-item slide slide-current">
             <h3 class="slide-title">
@@ -114,7 +183,7 @@
       </section>
 
       <section class="stock banners container">
-        <h2 class="section-title">Акции</h2>
+        <h2 class="visually-hidden">Акции</h2>
 
         <div class="banner stock-item stock-item-left">
           <span class="banner-title">Малинка даром!</span>
@@ -136,7 +205,7 @@
 
       <section class="hits container">
         <div class="hits-wrapper">
-          <h2 class="section-title">Хиты продаж</h2>
+          <h2 class="visually-hidden">Хиты продаж</h2>
           <ul class="hit-list">
 
             <li class="product-preview">
@@ -214,7 +283,7 @@
 
       <section class="advantages-wrapper container">
         <div class="advantages">
-          <h2 class="section-title">Преимущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
           <p class="advantages-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
             производства на развес</p>
 
@@ -252,17 +321,16 @@
         </div>
       </section>
 
-      <section class="banners-wrapper container">
-        <h2 class="section-title">Баннеры</h2>
+      <div class="banners-wrapper container">
         <article class="advertising banner">
-          <h2 class="section-title">Реклама блога</h2>
+          <h2 class="visually-hidden">Реклама блога</h2>
           <span class="advertising-title">Новое в нашем блоге</span><br>
           <a class="advertaising-link" href="#">10 способов сервировки<br> фруктовых щербетов<br> к столу</a>
         </article>
 
         <div class="mailing banner">
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
-            <h2 class="section-title">Подписка на рассылку</h2>
+            <h2 class="visually-hidden">Подписка на рассылку</h2>
             <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного,
               что у нас происходит.
               Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
@@ -273,14 +341,45 @@
             <button type="submit" class="btn">Отправить</button>
           </form>
         </div>
-      </section>
+      </div>
 
 
       <section class="map">
+        <div class="feedback-modal-wrapper">
+    
+          <div class="feedback modal">
+            
+            <button class="_close-feedback-form">
+              <svg class="cross-icon-feedback" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 1.417L16.488 0 8.995 7.077 1.5 0 0 1.417l7.494 7.078L0 15.572 1.5 17l7.495-7.077L16.488 17 18 15.572l-7.494-7.077L18 1.418z"
+                 fill="inherit"/>
+                </svg>
+              </button>
+            
+            <h2 class="visually-hidden">Форма обратной связи</h2>
+            <span class="feedback-text">Мы обязательно вам ответим!</span>
+            <form>
+              <input type="text" placeholder="Имя Фамилия" name="user-name" id="user-name" class="input">
+              <label for="user-name" class="label"></label>
+
+              <input type="email" placeholder="email@example.com" id="feedback-email" name="email" class="input">
+              <label for="feedback-email" class="label"></label>
+
+              <input type="text" class="user-text" name="user-text" placeholder="В свободной форме">
+
+              <button type="submit" class="btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <iframe class="iframe-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056775!2d30.320853351734574!3d59.93871916896512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1613758934753!5m2!1sru!2sru"
+          width="1200" height="430" style="border:0;" allowfullscreen=""
+          title="Большая Конюшенная ул., 19/8, Санкт-Петербург" loading="lazy">
+        </iframe>
         <div class="container address-wrapper">
           <img class="map-pin" src="img/src/svg/map-pin.svg" alt="" width="80" height="140">
           <div class="address">
-            <h2 class="section-title">Где нас найти</h2>
+            <h2 class="visually-hidden">Наш адрес</h2>
             <p class="address-text">Адрес главного офиса<br>и офлайн-магазина:<br>
               <span class="address-data">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span><br>
             </p>
@@ -288,7 +387,7 @@
               <a class="calls-number" href="tel:88124502525">8 812 450-25-25</a><br>
               (с 10 до 20 ежедневно)
             </p>
-            <button class="btn">Форма обратной связи</button>
+            <button class="btn _open-feedback-form">Форма обратной связи</button>
           </div>
         </div>
       </section>
@@ -296,7 +395,7 @@
 
     <footer class="main-footer container">
       <section class="socials">
-        <h2 class="section-title">Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="#">
@@ -361,7 +460,7 @@
       </section>
 
       <section class="info">
-        <h2 class="section-title">Информация</h2>
+        <h2 class="visually-hidden">Информация</h2>
         <ul class="info-list">
 
           <li class="info-item for-providers-link">
@@ -380,7 +479,7 @@
       </section>
 
       <section class="copyright">
-        <h2 class="section-title">О разработчике</h2>
+        <h2 class="visually-hidden">О разработчике</h2>
         <img src="img/src/svg/academy-logo.svg" width="108" height="39" alt="логотип HTML Academy">
         <P class="copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="light-link">HTML
             Academy</a> &copy;
@@ -389,113 +488,6 @@
 
     </footer>
   </div>
-
-  <!-- модальные окна  -->
-  <div class="modal catalog-selector">
-    <h2 class="section-title">Разделы каталога</h2>
-
-    <ul class="catalog-list">
-      <li class="new-item">
-        <a class="catalog-link" href="#">Новинки</a>
-      </li>
-      <li class="catalog-item choosen-page">
-        <a class="catalog-link" href="catalog.html">Сливочное</a>
-      </li>
-      <li class="catalog-item">
-        <a class="catalog-link" href="#">Щербеты</a>
-      </li>
-      <li class="catalog-item">
-        <a class="catalog-link" href="#">Фруктовый лед</a>
-      </li>
-      <li class="catalog-item">
-        <a class="catalog-link" href="#">Мелорин</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="modal login">
-    <h2 class="section-title">Логин</h2>
-    <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
-      <input type="email" placeholder="email@example.com" id="login-email" name="login" class="input">
-      <label for="login-email">Логин</label>
-
-      <input type="password" placeholder="••••••" id="login-password" name="password" class="input">
-      <label for="login-password">Пароль</label>
-
-      <div class="buttons-wrapper">
-        <button type="submit" class="btn">Войти</button>
-        <div class="links-wrapper">
-          <button class="btn-link dark-link">
-            <span class="link-text">Забыли пароль?</span>
-          </button>
-          <button class="btn-link dark-link">
-            <span class="link-text">Новая регистрация</span>
-          </button>
-        </div>
-      </div>
-
-    </form>
-  </div>
-
-  <div class="modal search">
-    <h2 class="section-title">Поиск по товарам</h2>
-    <input type="text" placeholder="Крем-брюле" id="search" name="search" class="input">
-    <label for="search" class="label">Поиск</label>
-  </div>
-
-  <div class="feedback modal">
-    <h2 class="section-title">Форма обратной связи</h2>
-    <span class="feedback-text">Мы обязательно вам ответим!</span>
-
-    <form>
-      <input type="text" placeholder="Имя Фамилия" name="user-name" id="user-name" class="input">
-      <label for="user-name" class="label"></label>
-
-      <input type="email" placeholder="email@example.com" id="feadback-email" name="email" class="input">
-      <label for="feadback-email" class="label"></label>
-
-      <input type="text" class="user-text" name="user-text" placeholder="В свободной форме">
-
-      <button type="submit" class="btn">Отправить</button>
-    </form>
-  </div>
-
-  <div class="modal cart">
-    <h2 class="visually-hidden">Товары в корзине</h2>
-
-    <form action="https://echo.htmlacademy.ru" method="post">
-
-      <div class="product-info-cart">
-        <svg class="cross-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M11 .713L10.287 0 5.5 4.787.713 0 0 .713 4.787 5.5 0 10.287.713 11 5.5 6.213 10.287 11l.713-.713L6.213 5.5 11 .713z"
-            fill="#323232" />
-        </svg>
-        <img width="32" height="32" src="./img/products/icecream-vanilla.jpg" class="cart-product-image" alt="Пломбир с апельсиновым джемом">
-        <div class="cart-product-title">Пломбир с апельсиновым джемом</div>
-        <div class="cart-item">1,5 кг х <span class="product-price">200 руб.</span></div>
-        <div class="product-sum">300 руб.</div>
-      </div>
-
-      <div class="product-info-cart">
-        <svg class="cross-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M11 .713L10.287 0 5.5 4.787.713 0 0 .713 4.787 5.5 0 10.287.713 11 5.5 6.213 10.287 11l.713-.713L6.213 5.5 11 .713z"
-            fill="#323232" />
-        </svg>
-        <img width="32" height="32" src="./img/products/icecream-strawberry.jpg" class="cart-product-image"  alt="Клубничный пломбир с присыпкой из белого шоколада">
-        <div class="cart-product-title">Клубничный пломбир с присыпкой из белого шоколада</div>
-        <div class="cart-item">1,5 кг х <span class="product-price">300 руб.</span></div>
-        <div class="product-sum">450 руб.</div>
-      </div>
-      <div class="price-info-cart">
-        <div class="divider"></div>
-        <div class="cart-price">Итого:<span>750 руб.</span></div>
-        <button type="submit" class="btn">Оформить заказ</button>
-      </div>
-    </form>
-  </div>
-
 
   <script src="js/script.js"></script>
 </body>

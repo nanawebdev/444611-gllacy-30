@@ -62,6 +62,8 @@
   --filter-checkbox: rgba(255, 255, 255, 0.8);
   --controls-bg: rgba(255, 255, 255, 0.4);
   --divider-color: #cacac7;
+  --cross-color: #231f20;
+  --overlay: rgba(0, 0, 0, 0.3);
 }
 
 .visually-hidden {
@@ -269,10 +271,6 @@ img {
 a {
   text-decoration: none;
   color: var(--default-light-text);
-}
-
-.section-title {
-  display: none;
 }
 
 .site-navigation,
@@ -547,7 +545,7 @@ a {
 .fast-view-btn {
   display: none;
   position: absolute;
-  bottom: -64px;
+  bottom: -55px;
   left: 50%;
   transform: translateX(-50%);
   padding: 12px 16px;
@@ -561,7 +559,7 @@ a {
   opacity: 1;
 }
 
-.product-preview:hover .fast-view-btn{
+.product-preview:hover .fast-view-btn {
   display: block;
 }
 
@@ -760,23 +758,29 @@ a {
 /* map */
 
 .map {
-  width: 100%;
+  width: 1200px;
   height: 430px;
   margin: 0 auto;
   position: relative;
-} 
+  display: flex;
+}
+
+.iframe-map {
+  margin: 0 auto;
+}
 
 .address-wrapper {
   position: absolute;
   top: 0;
-  left: 0;
-
+  right: 0;
   display: flex;
   justify-content: center;
 }
 
 .address {
-  grid-column: 2 / 3;
+  position: absolute;
+  top: 62px;
+  right: 27px;
   background-color: var(--address-light-bg);
   font-weight: 400;
   font-size: 14px;
@@ -791,8 +795,10 @@ a {
   justify-content: space-between;
 }
 
-.pin-wrapper {
-  grid-column: 1 / 2;
+.map-pin {
+  position: absolute;
+  top: 136px;
+  left: 266px;
 }
 
 .address-text {
@@ -1156,7 +1162,7 @@ fieldset {
 }
 
 .blocked {
-  color: (var--default-box-shadow);
+  color: var(--default-box-shadow);
 }
 
 .checkbox-wrapper {
@@ -1274,7 +1280,22 @@ fieldset {
 
 /* catalog menu  */
 
-.catalog-selector {
+.catalog-modal-wrapper {
+  position: absolute;
+  display: none;
+  top: 35px;
+  left: 0px;
+}
+
+.catalog-nav-link {
+  position: relative;
+}
+
+.catalog-nav-link:hover .catalog-modal-wrapper {
+  display: block;
+}
+
+.catalog-modal {
   overflow: hidden;
   width: 143px;
   border-radius: 4px;
@@ -1282,7 +1303,7 @@ fieldset {
   box-shadow: 0px 20px 20px var(--default-box-shadow);
 }
 
-.catalog-selector::after {
+.catalog-modal::after {
   content: "";
   position: absolute;
   top: 40px;
@@ -1343,6 +1364,21 @@ fieldset {
 
 /* login  */
 
+.login-nav-btn {
+  position: relative;
+}
+
+.login-modal-wrapper {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  z-index: 20;
+  display: none;
+}
+
+.login-nav-btn:hover .login-modal-wrapper {
+  display: block;
+}
 .login {
   display: flex;
   flex-direction: column;
@@ -1366,7 +1402,6 @@ fieldset {
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-  /* color: var(--default-dark-text); */
   background-color: var(--modal-light-bg);
 }
 
@@ -1449,6 +1484,22 @@ fieldset {
 
 /* .search  */
 
+.search-nav-btn {
+  position: relative;
+}
+
+.search-modal-wrapper {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  display: none;
+  z-index: 20;
+}
+
+.search-nav-btn:hover .search-modal-wrapper {
+  display: block;
+}
+
 .search {
   display: flex;
   align-items: center;
@@ -1466,6 +1517,26 @@ fieldset {
 
 /* feedback  */
 
+._close-feedback-form {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.feedback-modal-wrapper {
+  position: fixed;
+  margin: 0 auto;
+  display: none;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay);
+  place-items: center;
+}
+
 .feedback {
   display: flex;
   flex-direction: column;
@@ -1473,6 +1544,14 @@ fieldset {
   width: 477px;
   border-radius: 4px;
   padding: 20px 25px 27px 24px;
+  position: relative;
+}
+
+.cross-icon-feedback {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  fill: var(--cross-color);
 }
 
 .feedback .label {
@@ -1515,6 +1594,22 @@ fieldset {
 
 /* cart  */
 
+.cart-nav-btn {
+  position: relative;
+}
+
+.cart-modal-wrapper {
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  z-index: 20;
+  display: none;
+}
+
+.cart-nav-btn:hover .cart-modal-wrapper {
+  display: block;
+}
+
 .cart {
   color: var(--default-dark-text);
   font-weight: 400;
@@ -1525,6 +1620,7 @@ fieldset {
 .full-basket-button {
   background-color: var(--default-light-text);
 }
+
 /* pagination */
 
 .pagination-wrapper {
