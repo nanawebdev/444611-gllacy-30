@@ -26,6 +26,29 @@
             <a href="#" class="site-nav-link choosen-page">
               <span class="nav-link-name">Каталог</span>
             </a>
+            <div class="catalog-modal-wrapper">
+              <div class="modal catalog-modal">
+                <h2 class="visually-hidden">Разделы каталога</h2>
+
+                <ul class="catalog-list">
+                  <li class="new-item">
+                    <a class="catalog-link" href="#">Новинки</a>
+                  </li>
+                  <li class="catalog-item choosen-page">
+                    <a class="catalog-link" href="catalog.html">Сливочное</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li>
             <a href="#" class="site-nav-link">
@@ -40,41 +63,124 @@
         </ul>
 
         <div class="user-navigation">
-          <h2 class="section-title">Пользовательская навигация</h2>
-          <button class="search-button user-nav-button">
-            <svg class="search-icon nav-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z" />
-            </svg>
-            <span class="user-nav-name">Поиск</span>
-          </button>
-          <button class="login-button user-nav-button">
-            <svg class="login-icon nav-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" />
-              <path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" />
-            </svg>
-            <span class="user-nav-name">Вход</span>
-          </button>
-          <button class="cart-button user-nav-button full-basket-button">
-            <svg class="basket-icon nav-icon _hidden" width="21" height="20" fill="#fff"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9zM7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2z" />
-              <path fill="none" d="M5.935 4.03L6.973 13h10.53l1.19-8.97H5.934z" />
-            </svg>
-            <svg class="full-basket-icon nav-icon" width="21" height="20" fill="#fff"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill="#343434"
-                d="M5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9zM7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2z" />
-              <path fill="#E84D37" d="M5.935 4.03L6.973 13h10.53l1.19-8.97H5.934z" />
-            </svg>
-            <span class="user-nav-name poducts-quantity">2 товара</span>
-          </button>
+          <h2 class="visually-hidden">Пользовательская навигация</h2>
+
+          <div class="search-nav-btn">
+            <button class="search-button user-nav-button">
+
+              <svg class="search-icon nav-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z" />
+              </svg>
+              <span class="user-nav-name">Поиск</span>
+            </button>
+            <div class="search-modal-wrapper">
+              <div class="modal search">
+                <h2 class="visually-hidden">Поиск по товарам</h2>
+                <input type="text" placeholder="Крем-брюле" id="search" name="search" class="input">
+                <label for="search" class="label">Поиск</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="login-nav-btn">
+            <button class="login-button user-nav-button">
+              <svg class="login-icon nav-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" />
+                <path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" />
+              </svg>
+              <span class="user-nav-name">Вход</span>
+            </button>
+            <div class="login-modal-wrapper">
+              <div class="modal login">
+                <h2 class="visually-hidden">Логин</h2>
+                <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
+                  <input type="email" placeholder="email@example.com" id="login-email" name="login" class="input">
+                  <label for="login-email">Логин</label>
+
+                  <input type="password" placeholder="••••••" id="login-password" name="password" class="input">
+                  <label for="login-password">Пароль</label>
+
+                  <div class="buttons-wrapper">
+                    <button type="submit" class="btn">Войти</button>
+                    <div class="links-wrapper">
+                      <button class="btn-link dark-link">
+                        <span class="link-text">Забыли пароль?</span>
+                      </button>
+                      <button class="btn-link dark-link">
+                        <span class="link-text">Новая регистрация</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-nav-btn">
+            <button class="cart-button user-nav-button full-basket-button">
+              <svg class="basket-icon nav-icon _hidden" width="21" height="20" fill="#fff"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9zM7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2z" />
+                <path fill="none" d="M5.935 4.03L6.973 13h10.53l1.19-8.97H5.934z" />
+              </svg>
+              <svg class="full-basket-icon nav-icon" width="21" height="20" fill="#fff"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill="#343434"
+                  d="M5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9zM7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2z" />
+                <path fill="#E84D37" d="M5.935 4.03L6.973 13h10.53l1.19-8.97H5.934z" />
+              </svg>
+              <span class="user-nav-name poducts-quantity">2 товара</span>
+            </button>
+            <div class="cart-modal-wrapper">
+              <div class="modal cart">
+                <h2 class="visually-hidden">Товары в корзине</h2>
+
+                <form action="https://echo.htmlacademy.ru" method="post">
+
+                  <div class="product-info-cart">
+                    <svg class="cross-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 .713L10.287 0 5.5 4.787.713 0 0 .713 4.787 5.5 0 10.287.713 11 5.5 6.213 10.287 11l.713-.713L6.213 5.5 11 .713z"
+                        fill="#323232" />
+                    </svg>
+                    <img width="32" height="32" src="./img/products/icecream-vanilla.jpg" class="cart-product-image"
+                      alt="Пломбир с апельсиновым джемом">
+                    <div class="cart-product-title">Пломбир с апельсиновым джемом</div>
+                    <div class="cart-item">1,5 кг х <span class="product-price">200 руб.</span></div>
+                    <div class="product-sum">300 руб.</div>
+                  </div>
+
+                  <div class="product-info-cart">
+                    <svg class="cross-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 .713L10.287 0 5.5 4.787.713 0 0 .713 4.787 5.5 0 10.287.713 11 5.5 6.213 10.287 11l.713-.713L6.213 5.5 11 .713z"
+                        fill="#323232" />
+                    </svg>
+                    <img width="32" height="32" src="./img/products/icecream-strawberry.jpg" class="cart-product-image"
+                      alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    <div class="cart-product-title">Клубничный пломбир с присыпкой из белого шоколада</div>
+                    <div class="cart-item">1,5 кг х <span class="product-price">300 руб.</span></div>
+                    <div class="product-sum">450 руб.</div>
+                  </div>
+                  <div class="price-info-cart">
+                    <div class="divider"></div>
+                    <div class="cart-price">Итого:<span>750 руб.</span></div>
+                    <button type="submit" class="btn">Оформить заказ</button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
         </div>
       </nav>
 
       <div class="calls-info">
-        <h2 class="section-title">Время приема звонков</h2>
+        <h2 class="visually-hidden">Время приема звонков</h2>
         <span class="calls-time">с 10 до 20, ежедневно</span>
         <a class="calls-number" href="tel:88124502525">8 812 450-25-25</a>
       </div>
@@ -86,16 +192,16 @@
         <li class="breadcrumbs-item">
           <a href="index.html" class="light-link">Главная</a>
           <svg class="pointer-icon" width="6" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.156 3L0 .667.616 0l2.771 3L.616 6 0 5.333 2.156 3z" fill="inherit"/>
-            <path d="M4.768 3L2.613.667 3.229 0 6 3 3.229 6l-.616-.667L4.768 3z" fill="inherit"/>
+            <path d="M2.156 3L0 .667.616 0l2.771 3L.616 6 0 5.333 2.156 3z" fill="inherit" />
+            <path d="M4.768 3L2.613.667 3.229 0 6 3 3.229 6l-.616-.667L4.768 3z" fill="inherit" />
           </svg>
         </li>
 
         <li class="breadcrumbs-item">
           <a href="catalog.html" class="light-link">Каталог</a>
           <svg class="pointer-icon" width="6" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.156 3L0 .667.616 0l2.771 3L.616 6 0 5.333 2.156 3z" fill="inherit"/>
-            <path d="M4.768 3L2.613.667 3.229 0 6 3 3.229 6l-.616-.667L4.768 3z" fill="inherit"/>
+            <path d="M2.156 3L0 .667.616 0l2.771 3L.616 6 0 5.333 2.156 3z" fill="inherit" />
+            <path d="M4.768 3L2.613.667 3.229 0 6 3 3.229 6l-.616-.667L4.768 3z" fill="inherit" />
           </svg>
         </li>
 
@@ -106,7 +212,7 @@
       <h1 class="page-title">Сливочное мороженое</h1>
 
       <section class="filters-section">
-        <h2 class="section-title">Фильтр по товарам Каталога</h2>
+        <h2 class="visually-hidden">Фильтр по товарам Каталога</h2>
 
         <form class="filters" method="GET" action="https://echo.htmlacademy.ru">
 
@@ -158,7 +264,7 @@
               <div class="filter fat-types-wrapper">
 
                 <div class="radio-wrapper">
-                  <input type="radio" class="visually-hidden radio" id="filter-0per" name="fat">
+                  <input type="radio" class="visually-hidden" radio" id="filter-0per" name="fat">
                   <label class="label-for-radio" for="filter-0per">0%</label>
                 </div>
 
@@ -184,17 +290,21 @@
               <div class="filter flavor-types-wrapper">
 
                 <div class="checkbox-wrapper">
-                  <input type="checkbox" class="checkbox" id="filter-chocolate-flavor"
-                    name="chocolate-flavor">
+                  <input type="checkbox" class="checkbox" id="filter-chocolate-flavor" name="chocolate-flavor">
                   <svg class="checkbox-icon checkbox-off" width="23" height="20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
                       fill="inherit" fill-opacity="imherit" />
                   </svg>
-                  <svg class="checkbox-icon checkbox-on" width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.40695 6.51304L3.91976 8.96522L10.7574 15.7391L23 3.62609L20.5128 1.16522L10.7574 10.8174L6.40695 6.51304Z" fill="white" fill-opacity="0.8"/>
-                    <path d="M18.4562 17.3913C18.4562 17.6219 18.3637 17.8431 18.1988 18.0062C18.034 18.1693 17.8105 18.2609 17.5774 18.2609H2.63661C2.40352 18.2609 2.17997 18.1693 2.01515 18.0062C1.85033 17.8431 1.75774 17.6219 1.75774 17.3913V2.6087C1.75774 2.37807 1.85033 2.1569 2.01515 1.99382C2.17997 1.83074 2.40352 1.73913 2.63661 1.73913H17.4983L18.8869 0.356522C18.4893 0.126574 18.0379 0.00365521 17.5774 0H2.63661C1.93734 0 1.2667 0.274844 0.772244 0.764069C0.277785 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.277785 18.7467 0.772244 19.2359C1.2667 19.7252 1.93734 20 2.63661 20H17.5774C18.2767 20 18.9473 19.7252 19.4417 19.2359C19.9362 18.7467 20.214 18.0832 20.214 17.3913V8.84348L18.4562 10.5826V17.3913Z" fill="white" fill-opacity="0.8"/>
+                  <svg class="checkbox-icon checkbox-on" width="23" height="20" viewBox="0 0 23 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.40695 6.51304L3.91976 8.96522L10.7574 15.7391L23 3.62609L20.5128 1.16522L10.7574 10.8174L6.40695 6.51304Z"
+                      fill="white" fill-opacity="0.8" />
+                    <path
+                      d="M18.4562 17.3913C18.4562 17.6219 18.3637 17.8431 18.1988 18.0062C18.034 18.1693 17.8105 18.2609 17.5774 18.2609H2.63661C2.40352 18.2609 2.17997 18.1693 2.01515 18.0062C1.85033 17.8431 1.75774 17.6219 1.75774 17.3913V2.6087C1.75774 2.37807 1.85033 2.1569 2.01515 1.99382C2.17997 1.83074 2.40352 1.73913 2.63661 1.73913H17.4983L18.8869 0.356522C18.4893 0.126574 18.0379 0.00365521 17.5774 0H2.63661C1.93734 0 1.2667 0.274844 0.772244 0.764069C0.277785 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.277785 18.7467 0.772244 19.2359C1.2667 19.7252 1.93734 20 2.63661 20H17.5774C18.2767 20 18.9473 19.7252 19.4417 19.2359C19.9362 18.7467 20.214 18.0832 20.214 17.3913V8.84348L18.4562 10.5826V17.3913Z"
+                      fill="white" fill-opacity="0.8" />
                   </svg>
                   <label for="filter-chocolate-flavor" class="label-for-checkbox">шоколадные</label>
                 </div>
@@ -202,11 +312,11 @@
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-sugar-flavor" name="sugar-flavor">
                   <svg class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
-                    fill="inherit" fill-opacity="imherit" />
-                </svg>
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
+                      fill="inherit" fill-opacity="imherit" />
+                  </svg>
                   <svg class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -222,11 +332,11 @@
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-fruit-flavor" name="fruit-flavor">
                   <svg class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
-                    fill="inherit" fill-opacity="imherit" />
-                </svg>
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
+                      fill="inherit" fill-opacity="imherit" />
+                  </svg>
                   <svg class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -242,40 +352,40 @@
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-syrup-flavor" name="syrup-flavor">
                   <svg class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
-                    fill="inherit" fill-opacity="imherit" />
-                </svg>
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
+                      fill="inherit" fill-opacity="imherit" />
+                  </svg>
                   <svg class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M6.68552 6.51304L4.09018 8.96522L11.2251 15.7391L24 3.62609L21.4047 1.16522L11.2251 10.8174L6.68552 6.51304Z"
-                    fill="inherit" fill-opacity="inherit" />
-                  <path
-                    d="M19.2587 17.3913C19.2587 17.6219 19.1621 17.8431 18.9901 18.0062C18.8181 18.1693 18.5848 18.2609 18.3416 18.2609H2.75124C2.50802 18.2609 2.27475 18.1693 2.10277 18.0062C1.93078 17.8431 1.83416 17.6219 1.83416 17.3913V2.6087C1.83416 2.37807 1.93078 2.1569 2.10277 1.99382C2.27475 1.83074 2.50802 1.73913 2.75124 1.73913H18.2591L19.7081 0.356522C19.2932 0.126574 18.8221 0.00365521 18.3416 0H2.75124C2.02157 0 1.32178 0.274844 0.80582 0.764069C0.289862 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.289862 18.7467 0.80582 19.2359C1.32178 19.7252 2.02157 20 2.75124 20H18.3416C19.0713 20 19.7711 19.7252 20.287 19.2359C20.803 18.7467 21.0929 18.0832 21.0929 17.3913V8.84348L19.2587 10.5826V17.3913Z"
-                    fill="white" fill-opacity="0.8" />
-                </svg>
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.68552 6.51304L4.09018 8.96522L11.2251 15.7391L24 3.62609L21.4047 1.16522L11.2251 10.8174L6.68552 6.51304Z"
+                      fill="inherit" fill-opacity="inherit" />
+                    <path
+                      d="M19.2587 17.3913C19.2587 17.6219 19.1621 17.8431 18.9901 18.0062C18.8181 18.1693 18.5848 18.2609 18.3416 18.2609H2.75124C2.50802 18.2609 2.27475 18.1693 2.10277 18.0062C1.93078 17.8431 1.83416 17.6219 1.83416 17.3913V2.6087C1.83416 2.37807 1.93078 2.1569 2.10277 1.99382C2.27475 1.83074 2.50802 1.73913 2.75124 1.73913H18.2591L19.7081 0.356522C19.2932 0.126574 18.8221 0.00365521 18.3416 0H2.75124C2.02157 0 1.32178 0.274844 0.80582 0.764069C0.289862 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.289862 18.7467 0.80582 19.2359C1.32178 19.7252 2.02157 20 2.75124 20H18.3416C19.0713 20 19.7711 19.7252 20.287 19.2359C20.803 18.7467 21.0929 18.0832 21.0929 17.3913V8.84348L19.2587 10.5826V17.3913Z"
+                      fill="white" fill-opacity="0.8" />
+                  </svg>
                   <label for="filter-syrup-flavor" class="label-for-checkbox">сиропы</label>
                 </div>
 
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-jam-flavor" name="jam-flavor">
                   <svg class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
-                    fill="inherit" fill-opacity="imherit" />
-                </svg>
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
+                      fill="inherit" fill-opacity="imherit" />
+                  </svg>
                   <svg class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M6.68552 6.51304L4.09018 8.96522L11.2251 15.7391L24 3.62609L21.4047 1.16522L11.2251 10.8174L6.68552 6.51304Z"
-                    fill="inherit" fill-opacity="inherit" />
-                  <path
-                    d="M19.2587 17.3913C19.2587 17.6219 19.1621 17.8431 18.9901 18.0062C18.8181 18.1693 18.5848 18.2609 18.3416 18.2609H2.75124C2.50802 18.2609 2.27475 18.1693 2.10277 18.0062C1.93078 17.8431 1.83416 17.6219 1.83416 17.3913V2.6087C1.83416 2.37807 1.93078 2.1569 2.10277 1.99382C2.27475 1.83074 2.50802 1.73913 2.75124 1.73913H18.2591L19.7081 0.356522C19.2932 0.126574 18.8221 0.00365521 18.3416 0H2.75124C2.02157 0 1.32178 0.274844 0.80582 0.764069C0.289862 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.289862 18.7467 0.80582 19.2359C1.32178 19.7252 2.02157 20 2.75124 20H18.3416C19.0713 20 19.7711 19.7252 20.287 19.2359C20.803 18.7467 21.0929 18.0832 21.0929 17.3913V8.84348L19.2587 10.5826V17.3913Z"
-                    fill="white" fill-opacity="0.8" />
-                </svg>
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.68552 6.51304L4.09018 8.96522L11.2251 15.7391L24 3.62609L21.4047 1.16522L11.2251 10.8174L6.68552 6.51304Z"
+                      fill="inherit" fill-opacity="inherit" />
+                    <path
+                      d="M19.2587 17.3913C19.2587 17.6219 19.1621 17.8431 18.9901 18.0062C18.8181 18.1693 18.5848 18.2609 18.3416 18.2609H2.75124C2.50802 18.2609 2.27475 18.1693 2.10277 18.0062C1.93078 17.8431 1.83416 17.6219 1.83416 17.3913V2.6087C1.83416 2.37807 1.93078 2.1569 2.10277 1.99382C2.27475 1.83074 2.50802 1.73913 2.75124 1.73913H18.2591L19.7081 0.356522C19.2932 0.126574 18.8221 0.00365521 18.3416 0H2.75124C2.02157 0 1.32178 0.274844 0.80582 0.764069C0.289862 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.289862 18.7467 0.80582 19.2359C1.32178 19.7252 2.02157 20 2.75124 20H18.3416C19.0713 20 19.7711 19.7252 20.287 19.2359C20.803 18.7467 21.0929 18.0832 21.0929 17.3913V8.84348L19.2587 10.5826V17.3913Z"
+                      fill="white" fill-opacity="0.8" />
+                  </svg>
                   <label for="filter-jam-flavor" class="label-for-checkbox">джемы</label>
                 </div>
               </div>
@@ -287,7 +397,7 @@
       </section>
 
       <section class="filters-result">
-        <h2 class="section-title">Результат выдачи</h2>
+        <h2 class="visually-hidden">Результат выдачи</h2>
         <ul class="catalog-items">
 
           <li class="product-preview">
@@ -536,7 +646,7 @@
 
     <footer class="main-footer container">
       <section class="socials">
-        <h2 class="section-title">Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="#">
@@ -601,12 +711,13 @@
       </section>
 
       <section class="info">
-        <h2 class="section-title">Информация</h2>
+        <h2 class="visually-hidden">Информация</h2>
         <ul class="info-list">
-         
+
           <li class="info-item for-providers-link">
-            <svg class="heart-icon" width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8 0a4.1 4.1 0 00-3.3 1.66A4.1 4.1 0 004.2 0 4.12 4.12 0 000 4c0 3.18 7.5 9 7.5 9S15 7.22 15 4a4.12 4.12 0 00-4.2-4z" 
-              />
+            <svg class="heart-icon" width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.8 0a4.1 4.1 0 00-3.3 1.66A4.1 4.1 0 004.2 0 4.12 4.12 0 000 4c0 3.18 7.5 9 7.5 9S15 7.22 15 4a4.12 4.12 0 00-4.2-4z" />
             </svg>
             <a class="info-link light-link" href="#">Для поставщиков</a>
           </li>
@@ -619,116 +730,15 @@
       </section>
 
       <section class="copyright">
-        <h2 class="section-title">О разработчике</h2>
+        <h2 class="visually-hidden">О разработчике</h2>
         <img src="img/src/svg/academy-logo.svg" width="108" height="39" alt="логотип HTML Academy">
-        <P class="copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="light-link">HTML Academy</a> &copy;
+        <P class="copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="light-link">HTML
+            Academy</a> &copy;
           2019</p>
       </section>
 
     </footer>
   </div>
-
-
-  <!-- модальные окна  -->
- <div class="modal catalog-selector">
-    <h2 class="section-title">Разделы каталога</h2>
-
-    <ul class="catalog-list">
-      <li class="new-item">
-        <a class="catalog-link" href="#">Новинки</a>
-      </li>
-      <li class="catalog-item choosen-page"><a class="catalog-link" href="catalog.html">Сливочное</a>
-      </li>
-      <li class="catalog-item">
-        <a class="catalog-link" href="#">Щербеты</a>
-      </li>
-      <li class="catalog-item">
-        <a class="catalog-link" href="#">Фруктовый лед</a>
-      </li>
-      <li class="catalog-item">
-        <a class="catalog-link" href="#">Мелорин</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="modal login">
-    <h2 class="section-title">Логин</h2>
-    <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
-      <input type="email" placeholder="email@example.com" id="login-email" name="login" class="input">
-      <label for="login-email">Логин</label>
-
-      <input type="password" placeholder="••••••" id="login-password" name="password" class="input">
-      <label for="login-password">Пароль</label>
-
-      <div class="buttons-wrapper">
-        <button type="submit" class="btn">Войти</button>
-        <div class="links-wrapper">
-          <button class="btn-link dark-link">
-            <span class="link-text">Забыли пароль?</span>
-          </button>
-          <button class="btn-link dark-link">
-            <span class="link-text">Новая регистрация</span>
-          </button>
-        </div>
-      </div>
-
-    </form>
-  </div>
-
-  <div class="modal search">
-    <h2 class="section-title">Поиск по товарам</h2>
-    <input type="text" placeholder="Крем-брюле" id="search" name="search" class="input">
-    <label for="search" class="label">Поиск</label>
-  </div>
-
-  <div class="feedback modal">
-    <h2 class="section-title">Форма обратной связи</h2>
-    <span class="feedback-text">Мы обязательно вам ответим!</span>
-
-    <form>
-      <input type="text" placeholder="Имя Фамилия" name="user-name" id="user-name" class="input">
-      <label for="user-name" class="label"></label>
-
-      <input type="email" placeholder="email@example.com" id="feadback-email" name="email" class="input">
-      <label for="feadback-email" class="label"></label>
-
-      <input type="text" class="user-text" name="user-text" placeholder="В свободной форме">
-
-      <button type="submit" class="btn">Отправить</button>
-    </form>
-  </div>
-
-<div class="modal cart">
-    <h2 class="visually-hidden">Товары в корзине</h2>
-
-    <form action="https://echo.htmlacademy.ru" method="post">
-      
-        <div  class="product-info-cart">
-          <svg class="cross-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 .713L10.287 0 5.5 4.787.713 0 0 .713 4.787 5.5 0 10.287.713 11 5.5 6.213 10.287 11l.713-.713L6.213 5.5 11 .713z"
-             fill="#323232"/></svg>
-        <img width="32" height="32" src="./img/products/icecream-vanilla.jpg" class="cart-product-image" alt="Пломбир с апельсиновым джемом">
-          <div class="cart-product-title">Пломбир с апельсиновым джемом</div>
-          <div class="cart-item">1,5 кг х <span class="product-price">200 руб.</span></div>
-          <div class="product-sum">300 руб.</div>
-        </div>
-
-        <div class="product-info-cart">
-          <svg class="cross-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 .713L10.287 0 5.5 4.787.713 0 0 .713 4.787 5.5 0 10.287.713 11 5.5 6.213 10.287 11l.713-.713L6.213 5.5 11 .713z"
-             fill="#323232"/></svg>
-             <img width="32" height="32" src="./img/products/icecream-strawberry.jpg" class="cart-product-image" alt="Клубничный пломбир с присыпкой из белого шоколада">
-          <div class="cart-product-title">Клубничный пломбир с присыпкой из белого шоколада</div>
-          <div class="cart-item">1,5 кг х <span class="product-price">300 руб.</span></div>
-          <div class="product-sum">450 руб.</div>
-        </div>
-        <div class="price-info-cart">
-          <div class="divider"></div>
-          <div class="cart-price">Итого:<span>750 руб.</span></div>
-          <button type="submit" class="btn">Оформить заказ</button>
-        </div>
-      
-    </form>
-  </div> 
-
 
   <script src="js/script.js"></script>
 </body>
