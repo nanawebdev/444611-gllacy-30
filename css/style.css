@@ -1032,6 +1032,10 @@ a {
   margin-bottom: 6px;
 }
 
+.option {
+  color: var(--dark-text);
+}
+
 .sorting-list {
   padding: 0 14px;
   -webkit-appearance: none;
@@ -1285,6 +1289,7 @@ fieldset {
   display: none;
   top: 35px;
   left: 0px;
+  z-index: 20;
 }
 
 .catalog-nav-link {
