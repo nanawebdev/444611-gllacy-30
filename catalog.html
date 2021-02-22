@@ -68,17 +68,17 @@
           <div class="search-nav-btn">
             <button class="search-button user-nav-button">
 
-              <svg class="search-icon nav-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+              <svg role="img"class="search-icon nav-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z" />
               </svg>
-              <span class="user-nav-name">Поиск</span>
+              <span class="visually-hidden">Поиск</span>
             </button>
             <div class="search-modal-wrapper">
               <div class="modal search">
                 <h2 class="visually-hidden">Поиск по товарам</h2>
                 <input type="text" placeholder="Крем-брюле" id="search" name="search" class="input">
-                <label for="search" class="label">Поиск</label>
+                <label for="search" class="visually-hidden">Поиск</label>
               </div>
             </div>
 
@@ -86,7 +86,7 @@
 
           <div class="login-nav-btn">
             <button class="login-button user-nav-button">
-              <svg class="login-icon nav-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
+              <svg role="img" class="login-icon nav-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" />
                 <path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" />
               </svg>
@@ -97,7 +97,7 @@
                 <h2 class="visually-hidden">Логин</h2>
                 <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
                   <input type="email" placeholder="email@example.com" id="login-email" name="login" class="input">
-                  <label for="login-email">Логин</label>
+                  <label for="login-email" class="visually-hidden">Логин</label>
 
                   <input type="password" placeholder="••••••" id="login-password" name="password" class="input">
                   <label for="login-password">Пароль</label>
@@ -121,13 +121,13 @@
 
           <div class="cart-nav-btn">
             <button class="cart-button user-nav-button full-basket-button">
-              <svg class="basket-icon nav-icon _hidden" width="21" height="20" fill="#fff"
+              <svg role="img" class="basket-icon nav-icon _hidden" width="21" height="20" fill="#fff"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9zM7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2z" />
                 <path fill="none" d="M5.935 4.03L6.973 13h10.53l1.19-8.97H5.934z" />
               </svg>
-              <svg class="full-basket-icon nav-icon" width="21" height="20" fill="#fff"
+              <svg role="img" class="full-basket-icon nav-icon" width="21" height="20" fill="#fff"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill="#343434"
                   d="M5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9zM7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2z" />
@@ -142,7 +142,7 @@
                 <form action="https://echo.htmlacademy.ru" method="post">
 
                   <div class="product-info-cart">
-                    <svg class="cross-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg  role="img" aria-label="Закрыть" class="cross-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M11 .713L10.287 0 5.5 4.787.713 0 0 .713 4.787 5.5 0 10.287.713 11 5.5 6.213 10.287 11l.713-.713L6.213 5.5 11 .713z"
                         fill="#323232" />
@@ -155,7 +155,7 @@
                   </div>
 
                   <div class="product-info-cart">
-                    <svg class="cross-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg role="img" aria-label="Удалить продукт" class="cross-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M11 .713L10.287 0 5.5 4.787.713 0 0 .713 4.787 5.5 0 10.287.713 11 5.5 6.213 10.287 11l.713-.713L6.213 5.5 11 .713z"
                         fill="#323232" />
@@ -191,7 +191,7 @@
 
         <li class="breadcrumbs-item">
           <a href="index.html" class="light-link">Главная</a>
-          <svg class="pointer-icon" width="6" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg role="img" class="pointer-icon" width="6" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.156 3L0 .667.616 0l2.771 3L.616 6 0 5.333 2.156 3z" fill="inherit" />
             <path d="M4.768 3L2.613.667 3.229 0 6 3 3.229 6l-.616-.667L4.768 3z" fill="inherit" />
           </svg>
@@ -199,7 +199,7 @@
 
         <li class="breadcrumbs-item">
           <a href="catalog.html" class="light-link">Каталог</a>
-          <svg class="pointer-icon" width="6" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg role="img" class="pointer-icon" width="6" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.156 3L0 .667.616 0l2.771 3L.616 6 0 5.333 2.156 3z" fill="inherit" />
             <path d="M4.768 3L2.613.667 3.229 0 6 3 3.229 6l-.616-.667L4.768 3z" fill="inherit" />
           </svg>
@@ -221,7 +221,7 @@
               <legend class="legend">Сортировка:</legend>
 
               <div class="caret-wrapper">
-                <svg class="caret" width="11" height="10" viewBox="0 0 11 10" fill="none"
+                <svg role="img" class="caret" width="11" height="10" viewBox="0 0 11 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11" fill="inherit" />
                 </svg>
@@ -250,9 +250,9 @@
                     ">
                   </div>
                 </div>
-                <div class="toggle toggle-min" style="
+                <div tabindex="1" aria-lebel="минимальная цена" class="toggle toggle-min" style="
                 left: 15%"></div>
-                <div class="toggle toggle-max" style="
+                <div tabindex="1" aria-lebel="максимальная цена" class="toggle toggle-max" style="
                 left: 60%;"></div>
               </div>
             </fieldset>
@@ -291,13 +291,13 @@
 
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-chocolate-flavor" name="chocolate-flavor">
-                  <svg class="checkbox-icon checkbox-off" width="23" height="20" fill="none"
+                  <svg role="img" class="checkbox-icon checkbox-off" width="23" height="20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
                       fill="inherit" fill-opacity="imherit" />
                   </svg>
-                  <svg class="checkbox-icon checkbox-on" width="23" height="20" viewBox="0 0 23 20" fill="none"
+                  <svg role="img" class="checkbox-icon checkbox-on" width="23" height="20" viewBox="0 0 23 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.40695 6.51304L3.91976 8.96522L10.7574 15.7391L23 3.62609L20.5128 1.16522L10.7574 10.8174L6.40695 6.51304Z"
@@ -311,13 +311,13 @@
 
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-sugar-flavor" name="sugar-flavor">
-                  <svg class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
+                  <svg role="img" class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
                       fill="inherit" fill-opacity="imherit" />
                   </svg>
-                  <svg class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
+                  <svg role="img" class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.68552 6.51304L4.09018 8.96522L11.2251 15.7391L24 3.62609L21.4047 1.16522L11.2251 10.8174L6.68552 6.51304Z"
@@ -331,13 +331,13 @@
 
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-fruit-flavor" name="fruit-flavor">
-                  <svg class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
+                  <svg role="img" class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
                       fill="inherit" fill-opacity="imherit" />
                   </svg>
-                  <svg class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
+                  <svg role="img" class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.68552 6.51304L4.09018 8.96522L11.2251 15.7391L24 3.62609L21.4047 1.16522L11.2251 10.8174L6.68552 6.51304Z"
@@ -357,7 +357,7 @@
                       d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
                       fill="inherit" fill-opacity="imherit" />
                   </svg>
-                  <svg class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
+                  <svg role="img" class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.68552 6.51304L4.09018 8.96522L11.2251 15.7391L24 3.62609L21.4047 1.16522L11.2251 10.8174L6.68552 6.51304Z"
@@ -371,13 +371,13 @@
 
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-jam-flavor" name="jam-flavor">
-                  <svg class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
+                  <svg role="img" class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
                       fill="inherit" fill-opacity="imherit" />
                   </svg>
-                  <svg class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
+                  <svg role="img" class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.68552 6.51304L4.09018 8.96522L11.2251 15.7391L24 3.62609L21.4047 1.16522L11.2251 10.8174L6.68552 6.51304Z"
@@ -607,7 +607,7 @@
           <ul class="pagination">
             <li class="pagination-item">
               <a class="page-link" href="#" aria-label="Previous">
-                <svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg role="img" width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="pag-btn-fill"
                     d="M.159 6.341l5.909 5.51a.57.57 0 00.386.149.57.57 0 00.387-.149.498.498 0 00.159-.355.47.47 0 00-.041-.192.5.5 0 00-.118-.163l-5.533-5.14L6.841.831a.47.47 0 000-.71.575.575 0 00-.387-.12.538.538 0 00-.376.15l-5.92 5.48a.47.47 0 000 .71z"
                     fill="inherit" fill-opacity="imherit" />
@@ -631,7 +631,7 @@
             </li>
             <li class="pagination-item">
               <a class="page-link" href="#" aria-label="Next">
-                <svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg role="img" width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="pag-btn-fill"
                     d="M6.841 5.659L.932.149A.57.57 0 00.546 0a.57.57 0 00-.387.149.47.47 0 000 .71l5.533 5.14-5.533 5.17a.498.498 0 00-.159.355.47.47 0 00.041.192.5.5 0 00.118.163.575.575 0 00.387.12.538.538 0 00.376-.15l5.92-5.48a.47.47 0 000-.71z"
                     fill="inherit" fill-opacity="imherit" />
@@ -649,9 +649,9 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link" href="#">
-              <span class="social-link-name">Facebook</span>
-              <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social-link" href="#" aria-label="Facebook">
+              
+              <svg role="img" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-border" d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z"
                   stroke="inherit" stroke-opacity="inherit" stroke-width="2" />
                 <path class="icon-fill"
@@ -661,9 +661,9 @@
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#">
-              <span class="social-link-name">VK</span>
-              <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social-link" href="#" aria-label="VK">
+          
+              <svg role="img" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-border" d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z"
                   stroke="inherit" stroke-opacity="inherit" stroke-width="2" />
                 <path class="icon-fill"
@@ -676,9 +676,9 @@
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#">
-              <span class="social-link-name">Instagram</span>
-              <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social-link" href="#" aria-label="Instagram">
+            
+              <svg role="img" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-border" d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z"
                   stroke="inherit" stroke-opacity="inherit" stroke-width="2" />
                 <path class="icon-fill"
@@ -694,9 +694,9 @@
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#">
-              <span class="social-link-name">Twitter</span>
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social-link" href="#" aria-label="Twitter">
+           
+              <svg role="img" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-border"
                   d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z"
                   stroke="inherit" stroke-opacity="inherit" stroke-width="2" />
@@ -715,17 +715,23 @@
         <ul class="info-list">
 
           <li class="info-item for-providers-link">
-            <svg class="heart-icon" width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg role="img" class="heart-icon" width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M10.8 0a4.1 4.1 0 00-3.3 1.66A4.1 4.1 0 004.2 0 4.12 4.12 0 000 4c0 3.18 7.5 9 7.5 9S15 7.22 15 4a4.12 4.12 0 00-4.2-4z" />
             </svg>
             <a class="info-link light-link" href="#">Для поставщиков</a>
           </li>
-          <li class="info-item"><a class="info-link light-link" href="#">О производстве</a></li>
+          <li class="info-item">
+            <a class="info-link light-link" href="#">О производстве</a>
+          </li>
         </ul>
         <ul class="info-list">
-          <li class="info-item"><a class="info-link light-link" href="#">Наши документы</a></li>
-          <li class="info-item"><a class="info-link light-link" href="#">Экологические стандарты</a></li>
+          <li class="info-item">
+            <a class="info-link light-link" href="#">Наши документы</a>
+          </li>
+          <li class="info-item">
+            <a class="info-link light-link" href="#">Экологические стандарты</a>
+          </li>
         </ul>
       </section>
 
