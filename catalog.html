@@ -18,14 +18,15 @@
 
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/src/svg/header-logo.svg" alt="логотип магазина GllaycyShop" width="154" height="64">
+          <img src="img/src/svg/header-logo.svg" alt="логотип магазина GllacyShop" width="154" height="64">
         </a>
 
         <ul class="site-navigation">
-          <li>
-            <a href="#" class="site-nav-link choosen-page">
+          <li class="catalog-nav-link">
+            <a href="#" class="site-nav-link chosen-page">
               <span class="nav-link-name">Каталог</span>
             </a>
+
             <div class="catalog-modal-wrapper">
               <div class="modal catalog-modal">
                 <h2 class="visually-hidden">Разделы каталога</h2>
@@ -34,7 +35,7 @@
                   <li class="new-item">
                     <a class="catalog-link" href="#">Новинки</a>
                   </li>
-                  <li class="catalog-item choosen-page">
+                  <li class="catalog-item chosen-page">
                     <a class="catalog-link" href="catalog.html">Сливочное</a>
                   </li>
                   <li class="catalog-item">
@@ -66,7 +67,7 @@
           <h2 class="visually-hidden">Пользовательская навигация</h2>
 
           <div class="search-nav-btn">
-            <button class="search-button user-nav-button">
+            <button class="search-button user-nav-button" type="button">
 
               <svg role="img" class="search-icon nav-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -85,7 +86,7 @@
           </div>
 
           <div class="login-nav-btn">
-            <button class="login-button user-nav-button">
+            <button class="login-button user-nav-button" type="button">
               <svg role="img" class="login-icon nav-icon" width="20" height="19" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" />
                 <path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" />
@@ -100,18 +101,16 @@
                   <label for="login-email" class="visually-hidden">Логин</label>
 
                   <input type="password" placeholder="••••••" id="login-password" name="password" class="input">
-                  <label for="login-password">Пароль</label>
+                  <label for="login-password" class="visually-hidden">Пароль</label>
 
                   <div class="buttons-wrapper">
                     <button type="submit" class="btn">Войти</button>
+
                     <div class="links-wrapper">
-                      <button class="btn-link dark-link">
-                        <span class="link-text">Забыли пароль?</span>
-                      </button>
-                      <button class="btn-link dark-link">
-                        <span class="link-text">Новая регистрация</span>
-                      </button>
+                      <a class="login-link dark-link">Забыли пароль?</a>
+                      <a class="login-link dark-link">Новая регистрация</a>
                     </div>
+
                   </div>
 
                 </form>
@@ -120,7 +119,7 @@
           </div>
 
           <div class="cart-nav-btn">
-            <button class="cart-button user-nav-button full-basket-button">
+            <button class="cart-button user-nav-button full-basket-button" type="button">
               <svg role="img" class="basket-icon nav-icon _hidden" width="21" height="20" fill="#fff"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -135,6 +134,7 @@
               </svg>
               <span class="user-nav-name poducts-quantity">2 товара</span>
             </button>
+
             <div class="cart-modal-wrapper">
               <div class="modal cart">
                 <h2 class="visually-hidden">Товары в корзине</h2>
@@ -142,7 +142,8 @@
                 <form action="https://echo.htmlacademy.ru" method="post">
 
                   <div class="product-info-cart">
-                    <svg  role="img" aria-label="Закрыть" class="cross-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg role="img" aria-label="Закрыть" class="cross-icon" width="11" height="11" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M11 .713L10.287 0 5.5 4.787.713 0 0 .713 4.787 5.5 0 10.287.713 11 5.5 6.213 10.287 11l.713-.713L6.213 5.5 11 .713z"
                         fill="#323232" />
@@ -155,7 +156,8 @@
                   </div>
 
                   <div class="product-info-cart">
-                    <svg role="img" aria-label="Удалить продукт" class="cross-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg role="img" aria-label="Удалить продукт" class="cross-icon" width="11" height="11" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M11 .713L10.287 0 5.5 4.787.713 0 0 .713 4.787 5.5 0 10.287.713 11 5.5 6.213 10.287 11l.713-.713L6.213 5.5 11 .713z"
                         fill="#323232" />
@@ -166,9 +168,10 @@
                     <div class="cart-item">1,5 кг х <span class="product-price">300 руб.</span></div>
                     <div class="product-sum">450 руб.</div>
                   </div>
+
                   <div class="price-info-cart">
                     <div class="divider"></div>
-                    <div class="cart-price">Итого:<span>750 руб.</span></div>
+                    <div class="cart-price">Итого: <span>750 руб.</span></div>
                     <button type="submit" class="btn">Оформить заказ</button>
                   </div>
                 </form>
@@ -182,15 +185,16 @@
       <div class="calls-info">
         <h2 class="visually-hidden">Время приема звонков</h2>
         <span class="calls-time">с 10 до 20, ежедневно</span>
-        <a class="calls-number" href="tel:88124502525">8 812 450-25-25</a>
+        <a class="calls-number light-link" href="tel:8124502525">8 812 450-25-25</a>
       </div>
+
     </header>
 
     <main class="inner-content container">
       <ul class="breadcrumbs">
 
         <li class="breadcrumbs-item">
-          <a href="index.html" class="light-link">Главная</a>
+          <a href="index.html" class="light-link breadcrumbs-link">Главная</a>
           <svg role="img" class="pointer-icon" width="6" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.156 3L0 .667.616 0l2.771 3L.616 6 0 5.333 2.156 3z" fill="inherit" />
             <path d="M4.768 3L2.613.667 3.229 0 6 3 3.229 6l-.616-.667L4.768 3z" fill="inherit" />
@@ -198,7 +202,7 @@
         </li>
 
         <li class="breadcrumbs-item">
-          <a href="catalog.html" class="light-link">Каталог</a>
+          <a href="catalog.html" class="light-link breadcrumbs-link">Каталог</a>
           <svg role="img" class="pointer-icon" width="6" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.156 3L0 .667.616 0l2.771 3L.616 6 0 5.333 2.156 3z" fill="inherit" />
             <path d="M4.768 3L2.613.667 3.229 0 6 3 3.229 6l-.616-.667L4.768 3z" fill="inherit" />
@@ -206,7 +210,7 @@
         </li>
 
         <li>
-          <a href="#" class="light-link">Сливочное</a>
+          Сливочное
         </li>
       </ul>
       <h1 class="page-title">Сливочное мороженое</h1>
@@ -252,11 +256,11 @@
                 </div>
                 <div tabindex="1" class="toggle toggle-min" style="
                 left: 15%">
-                <span class="visually-hidden">Минимальная цена</span>
-              </div>
+                  <span class="visually-hidden">Минимальная цена</span>
+                </div>
                 <div tabindex="1" class="toggle toggle-max" style="
                 left: 60%;">
-                 <span class="visually-hidden">Максимальная цена</span>
+                  <span class="visually-hidden">Максимальная цена</span>
                 </div>
               </div>
             </fieldset>
@@ -268,20 +272,20 @@
               <div class="filter fat-types-wrapper">
 
                 <div class="radio-wrapper">
-                  <input type="radio" class="visually-hidden radio" id="filter-0per" name="fat">
+                  <input type="radio" class="visually-hidden radio" id="filter-0per" name="fat" value="0">
                   <label class="label-for-radio" for="filter-0per">0%</label>
                 </div>
 
                 <div class="radio-wrapper">
-                  <input type="radio" class="visually-hidden radio" id="filter-less-10per" name="fat">
+                  <input type="radio" class="visually-hidden radio" id="filter-less-10per" name="fat" value="10">
                   <label class="label-for-radio" for="filter-less-10per">до 10%</label>
                 </div>
                 <div class="radio-wrapper">
-                  <input type="radio" class="visually-hidden radio" id="filter-less-30per" name="fat">
+                  <input type="radio" class="visually-hidden radio" id="filter-less-30per" name="fat" value="30">
                   <label class="label-for-radio" for="filter-less-30per">до 30%</label>
                 </div>
                 <div class="radio-wrapper">
-                  <input type="radio" class="visually-hidden radio" id="filter-more-30per" name="fat">
+                  <input type="radio" class="visually-hidden radio" id="filter-more-30per" name="fat" value="40">
                   <label class="label-for-radio" for="filter-more-30per">выше 30%</label>
                 </div>
               </div>
@@ -295,14 +299,15 @@
 
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-chocolate-flavor" name="chocolate-flavor">
+
                   <svg role="img" class="checkbox-icon checkbox-off" width="23" height="20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
                       fill="inherit" fill-opacity="imherit" />
                   </svg>
-                  <svg role="img" class="checkbox-icon checkbox-on" width="23" height="20" viewBox="0 0 23 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg role="img" class="checkbox-icon checkbox-on" width="23" height="20" viewBox="0 0 23 20"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.40695 6.51304L3.91976 8.96522L10.7574 15.7391L23 3.62609L20.5128 1.16522L10.7574 10.8174L6.40695 6.51304Z"
                       fill="white" fill-opacity="0.8" />
@@ -310,86 +315,95 @@
                       d="M18.4562 17.3913C18.4562 17.6219 18.3637 17.8431 18.1988 18.0062C18.034 18.1693 17.8105 18.2609 17.5774 18.2609H2.63661C2.40352 18.2609 2.17997 18.1693 2.01515 18.0062C1.85033 17.8431 1.75774 17.6219 1.75774 17.3913V2.6087C1.75774 2.37807 1.85033 2.1569 2.01515 1.99382C2.17997 1.83074 2.40352 1.73913 2.63661 1.73913H17.4983L18.8869 0.356522C18.4893 0.126574 18.0379 0.00365521 17.5774 0H2.63661C1.93734 0 1.2667 0.274844 0.772244 0.764069C0.277785 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.277785 18.7467 0.772244 19.2359C1.2667 19.7252 1.93734 20 2.63661 20H17.5774C18.2767 20 18.9473 19.7252 19.4417 19.2359C19.9362 18.7467 20.214 18.0832 20.214 17.3913V8.84348L18.4562 10.5826V17.3913Z"
                       fill="white" fill-opacity="0.8" />
                   </svg>
+
                   <label for="filter-chocolate-flavor" class="label-for-checkbox">шоколадные</label>
                 </div>
 
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-sugar-flavor" name="sugar-flavor">
-                  <svg role="img" class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
+
+                  <svg role="img" class="checkbox-icon checkbox-off" width="23" height="20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
                       fill="inherit" fill-opacity="imherit" />
                   </svg>
-                  <svg role="img" class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg role="img" class="checkbox-icon checkbox-on" width="23" height="20" viewBox="0 0 23 20"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M6.68552 6.51304L4.09018 8.96522L11.2251 15.7391L24 3.62609L21.4047 1.16522L11.2251 10.8174L6.68552 6.51304Z"
-                      fill="inherit" fill-opacity="inherit" />
+                      d="M6.40695 6.51304L3.91976 8.96522L10.7574 15.7391L23 3.62609L20.5128 1.16522L10.7574 10.8174L6.40695 6.51304Z"
+                      fill="white" fill-opacity="0.8" />
                     <path
-                      d="M19.2587 17.3913C19.2587 17.6219 19.1621 17.8431 18.9901 18.0062C18.8181 18.1693 18.5848 18.2609 18.3416 18.2609H2.75124C2.50802 18.2609 2.27475 18.1693 2.10277 18.0062C1.93078 17.8431 1.83416 17.6219 1.83416 17.3913V2.6087C1.83416 2.37807 1.93078 2.1569 2.10277 1.99382C2.27475 1.83074 2.50802 1.73913 2.75124 1.73913H18.2591L19.7081 0.356522C19.2932 0.126574 18.8221 0.00365521 18.3416 0H2.75124C2.02157 0 1.32178 0.274844 0.80582 0.764069C0.289862 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.289862 18.7467 0.80582 19.2359C1.32178 19.7252 2.02157 20 2.75124 20H18.3416C19.0713 20 19.7711 19.7252 20.287 19.2359C20.803 18.7467 21.0929 18.0832 21.0929 17.3913V8.84348L19.2587 10.5826V17.3913Z"
+                      d="M18.4562 17.3913C18.4562 17.6219 18.3637 17.8431 18.1988 18.0062C18.034 18.1693 17.8105 18.2609 17.5774 18.2609H2.63661C2.40352 18.2609 2.17997 18.1693 2.01515 18.0062C1.85033 17.8431 1.75774 17.6219 1.75774 17.3913V2.6087C1.75774 2.37807 1.85033 2.1569 2.01515 1.99382C2.17997 1.83074 2.40352 1.73913 2.63661 1.73913H17.4983L18.8869 0.356522C18.4893 0.126574 18.0379 0.00365521 17.5774 0H2.63661C1.93734 0 1.2667 0.274844 0.772244 0.764069C0.277785 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.277785 18.7467 0.772244 19.2359C1.2667 19.7252 1.93734 20 2.63661 20H17.5774C18.2767 20 18.9473 19.7252 19.4417 19.2359C19.9362 18.7467 20.214 18.0832 20.214 17.3913V8.84348L18.4562 10.5826V17.3913Z"
                       fill="white" fill-opacity="0.8" />
                   </svg>
+
                   <label for="filter-sugar-flavor" class="label-for-checkbox">сахарные присыпки</label>
                 </div>
 
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-fruit-flavor" name="fruit-flavor">
-                  <svg role="img" class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
+
+                  <svg role="img" class="checkbox-icon checkbox-off" width="23" height="20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
                       fill="inherit" fill-opacity="imherit" />
                   </svg>
-                  <svg role="img" class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg role="img" class="checkbox-icon checkbox-on" width="23" height="20" viewBox="0 0 23 20"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M6.68552 6.51304L4.09018 8.96522L11.2251 15.7391L24 3.62609L21.4047 1.16522L11.2251 10.8174L6.68552 6.51304Z"
-                      fill="inherit" fill-opacity="inherit" />
+                      d="M6.40695 6.51304L3.91976 8.96522L10.7574 15.7391L23 3.62609L20.5128 1.16522L10.7574 10.8174L6.40695 6.51304Z"
+                      fill="white" fill-opacity="0.8" />
                     <path
-                      d="M19.2587 17.3913C19.2587 17.6219 19.1621 17.8431 18.9901 18.0062C18.8181 18.1693 18.5848 18.2609 18.3416 18.2609H2.75124C2.50802 18.2609 2.27475 18.1693 2.10277 18.0062C1.93078 17.8431 1.83416 17.6219 1.83416 17.3913V2.6087C1.83416 2.37807 1.93078 2.1569 2.10277 1.99382C2.27475 1.83074 2.50802 1.73913 2.75124 1.73913H18.2591L19.7081 0.356522C19.2932 0.126574 18.8221 0.00365521 18.3416 0H2.75124C2.02157 0 1.32178 0.274844 0.80582 0.764069C0.289862 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.289862 18.7467 0.80582 19.2359C1.32178 19.7252 2.02157 20 2.75124 20H18.3416C19.0713 20 19.7711 19.7252 20.287 19.2359C20.803 18.7467 21.0929 18.0832 21.0929 17.3913V8.84348L19.2587 10.5826V17.3913Z"
+                      d="M18.4562 17.3913C18.4562 17.6219 18.3637 17.8431 18.1988 18.0062C18.034 18.1693 17.8105 18.2609 17.5774 18.2609H2.63661C2.40352 18.2609 2.17997 18.1693 2.01515 18.0062C1.85033 17.8431 1.75774 17.6219 1.75774 17.3913V2.6087C1.75774 2.37807 1.85033 2.1569 2.01515 1.99382C2.17997 1.83074 2.40352 1.73913 2.63661 1.73913H17.4983L18.8869 0.356522C18.4893 0.126574 18.0379 0.00365521 17.5774 0H2.63661C1.93734 0 1.2667 0.274844 0.772244 0.764069C0.277785 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.277785 18.7467 0.772244 19.2359C1.2667 19.7252 1.93734 20 2.63661 20H17.5774C18.2767 20 18.9473 19.7252 19.4417 19.2359C19.9362 18.7467 20.214 18.0832 20.214 17.3913V8.84348L18.4562 10.5826V17.3913Z"
                       fill="white" fill-opacity="0.8" />
                   </svg>
+
                   <label for="filter-fruit-flavor" class="label-for-checkbox">фрукты</label>
                 </div>
 
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-syrup-flavor" name="syrup-flavor">
-                  <svg class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
+
+                  <svg role="img" class="checkbox-icon checkbox-off" width="23" height="20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
                       fill="inherit" fill-opacity="imherit" />
                   </svg>
-                  <svg role="img" class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg role="img" class="checkbox-icon checkbox-on" width="23" height="20" viewBox="0 0 23 20"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M6.68552 6.51304L4.09018 8.96522L11.2251 15.7391L24 3.62609L21.4047 1.16522L11.2251 10.8174L6.68552 6.51304Z"
-                      fill="inherit" fill-opacity="inherit" />
+                      d="M6.40695 6.51304L3.91976 8.96522L10.7574 15.7391L23 3.62609L20.5128 1.16522L10.7574 10.8174L6.40695 6.51304Z"
+                      fill="white" fill-opacity="0.8" />
                     <path
-                      d="M19.2587 17.3913C19.2587 17.6219 19.1621 17.8431 18.9901 18.0062C18.8181 18.1693 18.5848 18.2609 18.3416 18.2609H2.75124C2.50802 18.2609 2.27475 18.1693 2.10277 18.0062C1.93078 17.8431 1.83416 17.6219 1.83416 17.3913V2.6087C1.83416 2.37807 1.93078 2.1569 2.10277 1.99382C2.27475 1.83074 2.50802 1.73913 2.75124 1.73913H18.2591L19.7081 0.356522C19.2932 0.126574 18.8221 0.00365521 18.3416 0H2.75124C2.02157 0 1.32178 0.274844 0.80582 0.764069C0.289862 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.289862 18.7467 0.80582 19.2359C1.32178 19.7252 2.02157 20 2.75124 20H18.3416C19.0713 20 19.7711 19.7252 20.287 19.2359C20.803 18.7467 21.0929 18.0832 21.0929 17.3913V8.84348L19.2587 10.5826V17.3913Z"
+                      d="M18.4562 17.3913C18.4562 17.6219 18.3637 17.8431 18.1988 18.0062C18.034 18.1693 17.8105 18.2609 17.5774 18.2609H2.63661C2.40352 18.2609 2.17997 18.1693 2.01515 18.0062C1.85033 17.8431 1.75774 17.6219 1.75774 17.3913V2.6087C1.75774 2.37807 1.85033 2.1569 2.01515 1.99382C2.17997 1.83074 2.40352 1.73913 2.63661 1.73913H17.4983L18.8869 0.356522C18.4893 0.126574 18.0379 0.00365521 17.5774 0H2.63661C1.93734 0 1.2667 0.274844 0.772244 0.764069C0.277785 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.277785 18.7467 0.772244 19.2359C1.2667 19.7252 1.93734 20 2.63661 20H17.5774C18.2767 20 18.9473 19.7252 19.4417 19.2359C19.9362 18.7467 20.214 18.0832 20.214 17.3913V8.84348L18.4562 10.5826V17.3913Z"
                       fill="white" fill-opacity="0.8" />
                   </svg>
+
                   <label for="filter-syrup-flavor" class="label-for-checkbox">сиропы</label>
                 </div>
 
                 <div class="checkbox-wrapper">
                   <input type="checkbox" class="checkbox" id="filter-jam-flavor" name="jam-flavor">
-                  <svg role="img" class="checkbox-icon checkbox-off" width="20" height="20" fill="none"
+
+                  <svg role="img" class="checkbox-icon checkbox-off" width="23" height="20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z"
                       fill="inherit" fill-opacity="imherit" />
                   </svg>
-                  <svg role="img" class="checkbox-icon checkbox-on" width="24" height="20" viewBox="0 0 24 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg role="img" class="checkbox-icon checkbox-on" width="23" height="20" viewBox="0 0 23 20"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M6.68552 6.51304L4.09018 8.96522L11.2251 15.7391L24 3.62609L21.4047 1.16522L11.2251 10.8174L6.68552 6.51304Z"
-                      fill="inherit" fill-opacity="inherit" />
+                      d="M6.40695 6.51304L3.91976 8.96522L10.7574 15.7391L23 3.62609L20.5128 1.16522L10.7574 10.8174L6.40695 6.51304Z"
+                      fill="white" fill-opacity="0.8" />
                     <path
-                      d="M19.2587 17.3913C19.2587 17.6219 19.1621 17.8431 18.9901 18.0062C18.8181 18.1693 18.5848 18.2609 18.3416 18.2609H2.75124C2.50802 18.2609 2.27475 18.1693 2.10277 18.0062C1.93078 17.8431 1.83416 17.6219 1.83416 17.3913V2.6087C1.83416 2.37807 1.93078 2.1569 2.10277 1.99382C2.27475 1.83074 2.50802 1.73913 2.75124 1.73913H18.2591L19.7081 0.356522C19.2932 0.126574 18.8221 0.00365521 18.3416 0H2.75124C2.02157 0 1.32178 0.274844 0.80582 0.764069C0.289862 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.289862 18.7467 0.80582 19.2359C1.32178 19.7252 2.02157 20 2.75124 20H18.3416C19.0713 20 19.7711 19.7252 20.287 19.2359C20.803 18.7467 21.0929 18.0832 21.0929 17.3913V8.84348L19.2587 10.5826V17.3913Z"
+                      d="M18.4562 17.3913C18.4562 17.6219 18.3637 17.8431 18.1988 18.0062C18.034 18.1693 17.8105 18.2609 17.5774 18.2609H2.63661C2.40352 18.2609 2.17997 18.1693 2.01515 18.0062C1.85033 17.8431 1.75774 17.6219 1.75774 17.3913V2.6087C1.75774 2.37807 1.85033 2.1569 2.01515 1.99382C2.17997 1.83074 2.40352 1.73913 2.63661 1.73913H17.4983L18.8869 0.356522C18.4893 0.126574 18.0379 0.00365521 17.5774 0H2.63661C1.93734 0 1.2667 0.274844 0.772244 0.764069C0.277785 1.25329 0 1.91683 0 2.6087V17.3913C0 18.0832 0.277785 18.7467 0.772244 19.2359C1.2667 19.7252 1.93734 20 2.63661 20H17.5774C18.2767 20 18.9473 19.7252 19.4417 19.2359C19.9362 18.7467 20.214 18.0832 20.214 17.3913V8.84348L18.4562 10.5826V17.3913Z"
                       fill="white" fill-opacity="0.8" />
                   </svg>
+
                   <label for="filter-jam-flavor" class="label-for-checkbox">джемы</label>
                 </div>
               </div>
@@ -407,8 +421,11 @@
           <li class="product-preview">
             <div class="product-overlay"></div>
             <a href="#" class="product-image">
-              <img class="product-thumb" src="img/products/icecream-orange-jam.jpg" width="267" height="267"
-                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+
+              <div class="product-thumb-wrapper">
+                <img class="product-thumb" src="img/products/icecream-orange-jam.jpg" width="267" height="267" alt="">
+              </div>
+
               <div class="product-info">
                 <div class="product-info"></div>
                 <span class="product-price">310 ₽</span>
@@ -416,14 +433,17 @@
               </div>
               <span class="product-description light-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
             </a>
-            <button class="fast-view-btn btn">Быстрый просмотр</button>
+            <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
           </li>
 
           <li class="product-preview">
             <div class="product-overlay"></div>
             <a href="#" class="product-image">
-              <img class="product-thumb" src="img/products/icecream-chocolate-slices.jpg" width="267" height="267"
-                alt="Сливочно-кофейное с кусочками шоколада">
+              <div class="product-thumb-wrapper">
+                <img class="product-thumb" src="img/products/icecream-chocolate-slices.jpg" width="267" height="267"
+                  alt="">
+              </div>
+
               <div class="product-info">
                 <div class="product-info"></div>
                 <span class="product-price">380 ₽</span>
@@ -431,15 +451,15 @@
               </div>
               <span class="product-description light-link">Сливочно-кофейное с кусочками шоколада</span>
             </a>
-            <button class="fast-view-btn btn">Быстрый просмотр</button>
+            <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
           </li>
 
           <li class="product-preview">
             <div class="product-overlay"></div>
             <a href="#" class="product-image">
-
-              <img class="product-thumb" src="img/products/icecream-strawberry.jpg" width="267" height="267"
-                alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <div class="product-thumb-wrapper">
+                <img class="product-thumb" src="img/products/icecream-strawberry.jpg" width="267" height="267" alt="">
+              </div>
 
               <div class="product-info">
                 <span class="product-price">355 ₽</span>
@@ -448,16 +468,15 @@
 
               <span class="product-description light-link">Сливочно-клубничное с присыпкой из белого шоколада</span>
             </a>
-            <button class="fast-view-btn btn">Быстрый просмотр</button>
+            <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
           </li>
 
           <li class="product-preview">
             <div class="product-overlay"></div>
             <a href="#" class="product-image">
-
-              <img class="product-thumb" src="img/products/icecream-caramels.jpg" width="267" height="267"
-                alt="Сливочное крем-брюле с карамельной подливкой">
-
+              <div class="product-thumb-wrapper">
+                <img class="product-thumb" src="img/products/icecream-caramels.jpg" width="267" height="267" alt="">
+              </div>
               <div class="product-info">
                 <div class="product-info"></div>
                 <span class="product-price">415 ₽</span>
@@ -466,16 +485,16 @@
 
               <span class="product-description light-link">Сливочное крем-брюле с карамельной подливкой </span>
             </a>
-            <button class="fast-view-btn btn">Быстрый просмотр</button>
+            <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
           </li>
 
           <li class="product-preview">
             <div class="product-overlay"></div>
             <a href="#" class="product-image">
-
-              <img class="product-thumb" src="img/products/icecream-cranberry-jam.jpg" width="267" height="267"
-                alt="Сливочное с брусничным джемом">
-
+              <div class="product-thumb-wrapper">
+                <img class="product-thumb" src="img/products/icecream-cranberry-jam.jpg" width="267" height="267"
+                  alt="">
+              </div>
               <div class="product-info">
                 <span class="product-price">325 ₽</span>
                 <span class="product-weight">/кг</span>
@@ -483,16 +502,15 @@
 
               <span class="product-description light-link">Сливочное с брусничным джемом</span>
             </a>
-            <button class="fast-view-btn btn">Быстрый просмотр</button>
+            <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
           </li>
 
           <li class="product-preview">
             <div class="product-overlay"></div>
             <a href="#" class="product-image">
-
-              <img class="product-thumb" src="img/products/icecream-bilberry.jpg" width="267" height="267"
-                alt="Сливочно-черничное с цельными ягодами черники">
-
+              <div class="product-thumb-wrapper">
+                <img class="product-thumb" src="img/products/icecream-bilberry.jpg" width="267" height="267" alt="">
+              </div>
               <div class="product-info">
                 <span class="product-price">410 ₽</span>
                 <span class="product-weight">/кг</span>
@@ -500,15 +518,15 @@
 
               <span class="product-description light-link">Сливочно-черничное с цельными ягодами черники</span>
             </a>
-            <button class="fast-view-btn btn">Быстрый просмотр</button>
+            <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
           </li>
 
           <li class="product-preview">
             <div class="product-overlay"></div>
             <a href="#" class="product-image">
-
-              <img class="product-thumb" src="img/products/icecream-lemon.jpg" width="267" height="267"
-                alt="Сливочно-лимонное с карамельной присыпкой">
+              <div class="product-thumb-wrapper">
+                <img class="product-thumb" src="img/products/icecream-lemon.jpg" width="267" height="267" alt="">
+              </div>
               <div class="product-info">
                 <span class="product-price">315 ₽</span>
                 <span class="product-weight">/кг</span>
@@ -516,16 +534,16 @@
 
               <span class="product-description light-link">Сливочно-лимонное с карамельной присыпкой</span>
             </a>
-            <button class="fast-view-btn btn">Быстрый просмотр</button>
+            <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
           </li>
 
           <li class="product-preview">
             <div class="product-overlay"></div>
             <a href="#" class="product-image">
-
-              <img class="product-thumb" src="img/products/icecream-chocolate-chips.jpg" width="267" height="267"
-                alt="Сливочное с шоколадной стружкой">
-
+              <div class="product-thumb-wrapper">
+                <img class="product-thumb" src="img/products/icecream-chocolate-chips.jpg" width="267" height="267"
+                  alt="">
+              </div>
               <div class="product-info">
                 <span class="product-price">320 ₽</span>
                 <span class="product-weight">/кг</span>
@@ -533,16 +551,15 @@
 
               <span class="product-description light-link">Сливочное с шоколадной стружкой</span>
             </a>
-            <button class="fast-view-btn btn">Быстрый просмотр</button>
+            <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
           </li>
 
           <li class="product-preview">
             <div class="product-overlay"></div>
             <a href="#" class="product-image">
-
-              <img class="product-thumb" src="img/products/icecream-vanilla.jpg" width="267" height="267"
-                alt="Сливочно-ванильное с кусочками шоколада">
-
+              <div class="product-thumb-wrapper">
+                <img class="product-thumb" src="img/products/icecream-vanilla.jpg" width="267" height="267" alt="">
+              </div>
               <div class="product-info">
                 <span class="product-price">440 ₽</span>
                 <span class="product-weight">/кг</span>
@@ -550,16 +567,15 @@
 
               <span class="product-description light-link">Сливочно-ванильное с кусочками шоколада</span>
             </a>
-            <button class="fast-view-btn btn">Быстрый просмотр</button>
+            <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
           </li>
 
           <li class="product-preview">
             <div class="product-overlay"></div>
             <a href="#" class="product-image">
-
-              <img class="product-thumb" src="img/products/icecream-menthol.jpg" width="267" height="267"
-                alt="Сливочноe с ментоловым сиропом">
-
+              <div class="product-thumb-wrapper">
+                <img class="product-thumb" src="img/products/icecream-menthol.jpg" width="267" height="267" alt="">
+              </div>
               <div class="product-info">
                 <span class="product-price">435 ₽</span>
                 <span class="product-weight">/кг</span>
@@ -567,16 +583,16 @@
 
               <span class="product-description light-link">Сливочноe с ментоловым сиропом</span>
             </a>
-            <button class="fast-view-btn btn">Быстрый просмотр</button>
+            <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
           </li>
 
           <li class="product-preview">
             <div class="product-overlay"></div>
             <a href="#" class="product-image">
-
-              <img class="product-thumb" src="img/products/icecream-chocolate-pieces.jpg" width="267" height="267"
-                alt="Сливочное с кусочками черного шоколада">
-
+              <div class="product-thumb-wrapper">
+                <img class="product-thumb" src="img/products/icecream-chocolate-pieces.jpg" width="267" height="267"
+                  alt="">
+              </div>
               <div class="product-info">
                 <span class="product-price">355 ₽</span>
                 <span class="product-weight">/кг</span>
@@ -584,23 +600,22 @@
 
               <span class="product-description light-link">Сливочное с кусочками черного шоколада</span>
             </a>
-            <button class="fast-view-btn btn">Быстрый просмотр</button>
+            <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
           </li>
 
           <li class="product-preview">
             <div class="product-overlay"></div>
             <a href="#" class="product-image">
-
-              <img class="product-thumb" src="img/products/icecream-mint-syrop.jpg" width="267" height="267"
-                alt="Сливочное с мятным сиропом">
-
+              <div class="product-thumb-wrapper">
+                <img class="product-thumb" src="img/products/icecream-mint-syrop.jpg" width="267" height="267" alt="">
+              </div>
               <div class="product-info">
                 <span class="product-price">420 ₽</span>
                 <span class="product-weight">/кг</span>
               </div>
               <span class="product-description light-link">Сливочное с мятным сиропом</span>
             </a>
-            <button class="fast-view-btn btn">Быстрый просмотр</button>
+            <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
           </li>
         </ul>
       </section>
@@ -618,7 +633,7 @@
                 </svg>
               </a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item current-page-link">
               <a class="page-link" href="#">1</a>
             </li>
             <li class="pagination-item">
@@ -654,7 +669,7 @@
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="#" aria-label="Facebook">
-              
+
               <svg role="img" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-border" d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z"
                   stroke="inherit" stroke-opacity="inherit" stroke-width="2" />
@@ -666,7 +681,7 @@
           </li>
           <li class="social-item">
             <a class="social-link" href="#" aria-label="VK">
-          
+
               <svg role="img" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-border" d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z"
                   stroke="inherit" stroke-opacity="inherit" stroke-width="2" />
@@ -681,7 +696,7 @@
           </li>
           <li class="social-item">
             <a class="social-link" href="#" aria-label="Instagram">
-            
+
               <svg role="img" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-border" d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z"
                   stroke="inherit" stroke-opacity="inherit" stroke-width="2" />
@@ -699,7 +714,7 @@
           </li>
           <li class="social-item">
             <a class="social-link" href="#" aria-label="Twitter">
-           
+
               <svg role="img" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-border"
                   d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z"
@@ -741,11 +756,10 @@
 
       <section class="copyright">
         <h2 class="visually-hidden">О разработчике</h2>
-        <a href="https://htmlacademy.ru"><img src="img/src/svg/academy-logo.svg" width="108" height="39"
-            alt="логотип HTML Academy"></a>
+        <a href="https://htmlacademy.ru">
+          <img src="img/src/svg/academy-logo.svg" width="108" height="39" alt="логотип HTML Academy"></a>
         <P class="copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="light-link">HTML
-          Academy</a> &copy;
-          2019</p>
+            Academy</a> &copy; 2019</p>
       </section>
 
     </footer>
