@@ -5,14 +5,12 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
-<!-- добавить visually-hidden для заголовков с классом section-title -->
 
 <body class="page-body main-page">
 
@@ -100,10 +98,12 @@
               <div class="modal login">
                 <h2 class="visually-hidden">Логин</h2>
                 <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
-                  <input type="email" placeholder="email@example.com" id="login-email" name="login" class="input login-log-input">
+                  <input type="email" placeholder="email@example.com" id="login-email" name="login"
+                    class="input login-log-input">
                   <label for="login-email" class="visually-hidden">Логин</label>
 
-                  <input type="password" placeholder="••••••" id="login-password" name="password" class="input login-pass-input">
+                  <input type="password" placeholder="••••••" id="login-password" name="password"
+                    class="input login-pass-input">
                   <label for="login-password" class="visually-hidden">Пароль</label>
 
                   <div class="buttons-wrapper">
@@ -323,7 +323,7 @@
         <article class="advertising banner">
           <h2 class="visually-hidden">Реклама блога</h2>
           <span class="advertising-title">Новое в нашем блоге</span><br>
-          <a class="advertising-link" href="#">10 способов сервировки<br> фруктовых щербетов<br> к столу</a>
+          <a class="advertising-link dark-link" href="#">10 способов сервировки<br> фруктовых щербетов<br> к столу</a>
         </article>
 
         <div class="mailing banner">
@@ -373,7 +373,8 @@
                 class="input user-email-input">
               <label for="feedback-email" class="visually-hidden">Email пользователя</label>
 
-              <textarea class="user-text user-feedback-input" name="user-text" placeholder="В свободной форме"></textarea>
+              <textarea class="user-text user-feedback-input" name="user-text"
+                placeholder="В свободной форме"></textarea>
 
               <button type="submit" class="btn">Отправить</button>
             </form>
@@ -494,7 +495,7 @@
 
       <section class="copyright">
         <h2 class="visually-hidden">О разработчике</h2>
-        <a href="https://htmlacademy.ru">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/src/svg/academy-logo.svg" width="108" height="39" alt="логотип HTML Academy"></a>
         <P class="copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="light-link">HTML
             Academy</a> &copy; 2019</p>
@@ -503,7 +504,7 @@
     </footer>
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
