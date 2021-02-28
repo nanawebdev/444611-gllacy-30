@@ -453,7 +453,7 @@ img {
   color: var(--default-dark-text);
 }
 
-.choosing-page .nav-link-name {
+.chosen-page .nav-link-name {
   border: none;
 }
 
@@ -1640,16 +1640,16 @@ fieldset {
   background-color: var(--catalog-item-hover);
 }
 
-.choosing-page {
+.chosen-page {
   background: var(--open-page-link);
 }
 
-.choosing-page:hover {
+.chosen-page:hover {
   background: var(--open-page-link);
   color: var(--default-light-text);
 }
 
-.choosing-page > .nav-link-name {
+.chosen-page > .nav-link-name {
   border-bottom: none;
 }
 
