@@ -5,13 +5,6 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -460,7 +453,7 @@ img {
   color: var(--default-dark-text);
 }
 
-.choosen-page .nav-link-name {
+.choosing-page .nav-link-name {
   border: none;
 }
 
@@ -1647,16 +1640,16 @@ fieldset {
   background-color: var(--catalog-item-hover);
 }
 
-.chosen-page {
+.choosing-page {
   background: var(--open-page-link);
 }
 
-.chosen-page:hover {
+.choosing-page:hover {
   background: var(--open-page-link);
   color: var(--default-light-text);
 }
 
-.chosen-page > .nav-link-name {
+.choosing-page > .nav-link-name {
   border-bottom: none;
 }
 

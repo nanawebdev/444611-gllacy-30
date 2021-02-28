@@ -213,9 +213,10 @@
             <li class="product-preview">
               <div class="product-overlay"></div>
               <a href="#" class="product-image">
-                <img class="hit-icon" src="img/src/svg/hit-icon.svg" alt="" width="61" height="61">
+                <img class="hit-icon" src="img/src/svg/hit-icon.svg" alt="icon" width="61" height="61">
                 <div class="product-thumb-wrapper">
-                  <img class="product-thumb" src="img/products/icecream-orange-jam.jpg" width="267" height="267" alt="">
+                  <img class="product-thumb" src="img/products/icecream-orange-jam.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой
+                  стружкой">
                 </div>
                 <div class="product-info">
                   <span class="product-price">310 ₽</span>
@@ -230,10 +231,10 @@
             <li class="product-preview">
               <div class="product-overlay"></div>
               <a href="#" class="product-image">
-                <img class="hit-icon" src="img/src/svg/hit-icon.svg" alt="" width="61" height="61">
+                <img class="hit-icon" src="img/src/svg/hit-icon.svg" alt="icon" width="61" height="61">
                 <div class="product-thumb-wrapper">
                   <img class="product-thumb" src="img/products/icecream-chocolate-slices.jpg" width="267" height="267"
-                    alt="">
+                    alt="Сливочно-кофейное с кусочками шоколада">
                 </div>
                 <div class="product-info">
                   <span class="product-price">380 ₽</span>
@@ -247,9 +248,9 @@
             <li class="product-preview">
               <div class="product-overlay"></div>
               <a href="#" class="product-image">
-                <img class="hit-icon" src="img/src/svg/hit-icon.svg" alt="" width="61" height="61">
+                <img class="hit-icon" src="img/src/svg/hit-icon.svg" alt="icon" width="61" height="61">
                 <div class="product-thumb-wrapper">
-                  <img class="product-thumb" src="img/products/icecream-strawberry.jpg" width="267" height="267" alt="">
+                  <img class="product-thumb" src="img/products/icecream-strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 </div>
                 <div class="product-info">
                   <span class="product-price">355 ₽</span>
@@ -263,15 +264,15 @@
             <li class="product-preview">
               <div class="product-overlay"></div>
               <a href="#" class="product-image">
-                <img class="hit-icon" src="img/src/svg/hit-icon.svg" alt="" width="61" height="61">
+                <img class="hit-icon" src="img/src/svg/hit-icon.svg" alt="icon" width="61" height="61">
                 <div class="product-thumb-wrapper">
-                  <img class="product-thumb" src="img/products/icecream-caramels.jpg" width="267" height="267" alt="">
+                  <img class="product-thumb" src="img/products/icecream-caramels.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                 </div>
                 <div class="product-info">
                   <span class="product-price">415 ₽</span>
                   <span class="product-weight">/кг</span>
                 </div>
-                <span class="product-description light-link">Сливочное крем-брюле с карамельной подливкой </span>
+                <span class="product-description light-link">Сливочное крем-брюле с карамельной подливкой</span>
               </a>
               <button class="fast-view-btn btn" type="button">Быстрый просмотр</button>
             </li>
@@ -286,7 +287,7 @@
             производства на развес</p>
 
           <div class="advantages-item">
-            <img class="advantages-icon" src="img/src/svg/profit-icon-ice.svg" width="49" height="49" alt="">
+            <img class="advantages-icon" src="img/src/svg/profit-icon-ice.svg" width="49" height="49" alt="icon">
             <p class="advantages-text">Все наше мороженое изготавливается на собственном производстве, с
               использованием
               современного
@@ -294,21 +295,21 @@
               проверенных временем технологий.</p>
           </div>
           <div class="advantages-item">
-            <img class="advantages-icon" src="img/src/svg/profit-icon-cow.svg" width="49" height="49" alt="">
+            <img class="advantages-icon" src="img/src/svg/profit-icon-cow.svg" width="49" height="49" alt="icon">
             <p class="advantages-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
               компаний, с которыми нас
               связывает
               долговременное сотрудничество.</p>
           </div>
           <div class="advantages-item">
-            <img class="advantages-icon" src="img/src/svg/profit-icon-leaf.svg" width="49" height="49" alt="">
+            <img class="advantages-icon" src="img/src/svg/profit-icon-leaf.svg" width="49" height="49" alt="icon">
             <p class="advantages-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
               качества. Все
               дополнительные
               ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </div>
           <div class="advantages-item">
-            <img class="advantages-icon" src="img/src/svg/profit-icon-thermometer.svg" width="49" height="49" alt="">
+            <img class="advantages-icon" src="img/src/svg/profit-icon-thermometer.svg" width="49" height="49" alt="icon">
 
             <p class="advantages-text">Доставка нашего мороженого до заказчиков осуществляется в специальном
               термопаке,
@@ -374,7 +375,9 @@
               <label for="feedback-email" class="visually-hidden">Email пользователя</label>
 
               <textarea class="user-text user-feedback-input" name="user-text"
-                placeholder="В свободной форме"></textarea>
+                placeholder="В свободной форме" id="textarea-feedback"></textarea>
+                <label for="textarea-feedback" class="visually-hidden">Отзыв пользователя</label>
+              
 
               <button type="submit" class="btn">Отправить</button>
             </form>
@@ -396,7 +399,6 @@
             </p>
             <button class="btn _open-feedback-form" type="button">Форма обратной связи</button>
           </div>
-          <!-- <img class="map-pin" src="img/src/svg/map-pin.svg" alt="" width="80" height="140"> -->
         </div>
 
       </section>
