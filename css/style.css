@@ -770,9 +770,9 @@ img {
 }
 
 .advantages {
-  -webkit-column-gap: 11px;
-     -moz-column-gap: 11px;
-          column-gap: 11px;
+  -webkit-column-gap: 23px;
+     -moz-column-gap: 23px;
+          column-gap: 23px;
   row-gap: 10px;
   width: 1146px;
   min-height: 306px;
@@ -1204,7 +1204,7 @@ img {
 }
 
 .filters-result {
-  margin-bottom: 80px;
+  margin-bottom: 77px;
 }
 
 .page-title {
@@ -2145,7 +2145,7 @@ fieldset {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 .pagination {
@@ -2174,7 +2174,7 @@ fieldset {
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
   cursor: pointer;
-  margin: 0 2px;
+  margin-right: 4px;
 }
 
 .pagination-item:hover {
