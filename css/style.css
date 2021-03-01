@@ -2345,8 +2345,3 @@ fieldset {
   color: var(--link-text-light);
   border-color: var(--link-text-light);
 }
-
-/* фокус для клавиатурных событий */
-/* *:focus {
-  outline: 2px solid black;
-} */
