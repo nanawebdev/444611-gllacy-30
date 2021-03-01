@@ -2348,10 +2348,5 @@ fieldset {
 
 /* фокус для клавиатурных событий */
 /* *:focus {
-  outline: 4px solid var(--full-basket-color);
+  outline: 2px solid black;
 } */
-
-/* *:focus:not(:focus-visible) {
-  outline: none;
-} */
-/* как отключить фокус у инпутов  */
